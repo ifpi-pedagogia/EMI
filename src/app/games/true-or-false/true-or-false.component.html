@@ -1,0 +1,25 @@
+<div class='container emi-space'>
+    <div class="row">
+        <div class="col l5 push-l1 m3 push-m1 s12">
+          <img [src]='imgGame' class="responsive-img">
+        </div>
+
+        <div *ngIf='!finishGame' class="col l6 offset-l1 m8 offset-m1 s12">
+          <p style="text-align: justify;">{{questions[round].question}}</p>
+          <hr>
+          <a class="waves-effect waves-light btn-large red darken-3" (click)='verifyResponse(false)'>  MITO  </a>
+          <a class="waves-effect waves-light btn-large green darken-2" (click)='verifyResponse(true)'> VERDADE </a>
+        </div>
+
+        <div *ngIf='finishGame' class="emi-distance col l6 offset-l1 m8 offset-m1 s12 light-green lighten-4 emi-font">
+            <h4>Fim de jogo!</h4>
+            <ol>
+              <li>Número de acertos: {{ score }}</li>
+              <li>Desempenho: {{ perfomance | number: '2.1-1' }}%</li>
+            </ol>
+            <hr class="my-4">
+            <a class='waves-effect waves-light btn-large red darken-2 emi-btn' [routerLink]="['/games/quiz']">Cancelar</a>
+            <a class='waves-effect waves-light btn-large blue darken-3 emi-btn' (click)='restart()'>Próxima rodada</a>
+          </div>
+    </div>
+</div>

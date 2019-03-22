@@ -1,0 +1,19 @@
+<div class='container deep-purple lighten-5'>
+  <div class='row red darken-4'><h5 class='white-text center'>De veteranos para novatos</h5></div>
+  <div *ngFor='let item of mural' class="row">
+    <div class="col l3 offset-l1 m4 offset-m1 s12">
+      <div class="card">
+        <div class="card-image">
+          <img [src]='item.iconPerfil'>
+        </div>
+        <div class="card-content center light-green">
+          <p><strong class='white-text'>{{item.student}}</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="col l6 offset-l1 pull-l1 m7 s12 light-green lighten-3">
+      <p style="text-align: justify;">{{item.deposition}}</p>
+    </div>
+  </div>
+</div>
+<br><br><br><br>

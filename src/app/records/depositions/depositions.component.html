@@ -1,0 +1,20 @@
+<div class='container deep-purple lighten-5'>
+  <div class="row red darken-4">
+    <h5 class='white-text center'>Depoimentos</h5>
+  </div>
+    <div class="row">
+      <div class='col s12 m12 l3' *ngFor="let item of depositions">
+          <div class='card emi-card light-green lighten-2'>
+              <div class='card-image'><video [src]='item.url' class='responsive-video'></video></div>
+              <div class='card-content'>
+                <p><strong>{{item.author}}</strong></p>
+                <p class='card-action align-content-center'>
+                    <a class='btn-floating btn-large waves-effect waves-light red darken-4' [routerLink]="['/records/deposition', item.id]">
+                      <i class='material-icons'>video_library</i>
+                    </a>
+                </p>
+              </div>
+            </div>
+      </div>
+    </div>
+</div>
