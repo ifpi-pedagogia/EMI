@@ -1,41 +1,17 @@
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<ul id="dropdown1" class="dropdown-content">
-  <li><a [routerLink]="['records/mural-one']">Mural de Recados</a></li>
-  <li class="divider"></li>
-  <li><a [routerLink]="['records/mural-outhers']">De 4º para 1º Ano</a></li>
-  <li class="divider"></li>
-  <li><a [routerLink]="['records/depositions-in-videos']">Depoimentos</a></li>
-</ul>
-
-<ul id="dropdown2" class="dropdown-content">
-  <li><a [routerLink]="['games/true-or-false']">Mito ou Verdade</a></li>
-  <li class="divider"></li>
-  <li><a [routerLink]="['games/quiz']">Quiz</a></li>
-</ul>
-
-<div class="navbar-fixed">
-  <nav class="green darken-4 z-depth-5">
-    <div class="nav-wrapper-fixed container">
-      <a [routerLink]="['breve-historico']" class="brand-logo"><img class="responsive-img" src="assets/imagens/logo_ifpi.png"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a [routerLink]="['']"><b>Início</b></a></li>
-        <li><a href="#"><b>Menu</b></a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><b>Games</b><i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><b>Depoimentos</b><i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
-    </div>
+<header class="header">
+  <div class="header__bar">
+    <a href="" class="logo__text"></a>
+    <img src="assets/imagens/logo_ifpi.png" alt="Instituto Federal do Piauí">
+  </div>
+  <nav>
+    <ul class="header__nav">
+      <li><a [routerLink]="['']"><b>Início</b></a></li>
+      <li><a [routerLink]="['records/depositions-in-videos']"><b>Depoimentos - Vídeos</b></a></li>
+      <li><a [routerLink]="['records/mural-outhers']"><b>De 4º para 1º Ano</b></a></li>
+      <li><a [routerLink]="['records/mural-one']"><b>Mural de recados</b></a></li>
+      <li><a [routerLink]="['games/true-or-false']"><b>Mito ou Verdade</b></a></li>
+      <li><a [routerLink]="['games/quiz']"><b>Quiz</b></a></li>
+    </ul>
   </nav>
-</div>
+</header>
 
-<ul class="sidenav" id="mobile-demo">
-  <li><a [routerLink]="['']"><b>Início</b></a></li>
-  <li><a href="!#"><b>Menu</b></a></li>
-  <li><a [routerLink]="['games/true-or-false']"><b>Mito ou Verdade</b></a></li>
-  <li><a [routerLink]="['games/quiz']"><b>Quiz</b></a></li>
-  <li><a [routerLink]="['records/depositions-in-videos']"><b>Depoimentos - Vídeos</b></a></li>
-  <li><a [routerLink]="['records/mural-outhers']"><b>De 4º para 1º Ano</b></a></li>
-  <li><a [routerLink]="['records/mural-one']"><b>Mural de recados</b></a></li>
-</ul>
