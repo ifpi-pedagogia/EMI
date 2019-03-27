@@ -22,15 +22,6 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "./node_modules/materialize-css/dist/css/materialize.css",
-              "src/styles.css"
-            ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/materialize-css/dist/js/materialize.js",
-              "./node_modules/1emi-add-code/control-menu.js"
-            ],
             "es5BrowserSupport": true
           },
           "configurations": {
