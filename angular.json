@@ -22,6 +22,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "styles":[
+              "src/main.css",
+              "src/normalize.css"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -76,7 +80,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/main.css",
+              "src/normalize.css"
             ],
             "scripts": [],
             "assets": [
