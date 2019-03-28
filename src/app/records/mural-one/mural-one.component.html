@@ -1,9 +1,17 @@
-  <div *ngFor='let item of mural' >
-          <img [src]='item.iconPerfil'>
-          <p><strong class='white-text'>{{item.student}}</strong></p>
-    
-      <p style="text-align: justify;">{{item.deposition}}</p>
+<div *ngFor='let item of mural' class="container">
+  <section class="people-cards">
+    <article class="people-cards__card">
+      <img src="https://static1.squarespace.com/static/57ec70cfd482e940c082362d/t/5818b6a4d482e9494b9392a1/1478014675168/cartoonscience_wallpaper1a.jpg?format=1500w" alt="" class="people-cards__image">
   
-  </div>
+      <div class="people-cards__avatar">
+        <img [src]='item.iconPerfil' alt="">
+      </div>
 
-<br><br><br><br>
+      <div class="people-cards__content">
+        <h2 class="people-cards__title">{{item.student}}</h2>
+        <p class="people-cards__text">{{item.deposition}}</p>
+      </div>
+    </article>
+  </section>
+</div>
+
