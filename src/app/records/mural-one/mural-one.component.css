@@ -1,7 +1,47 @@
-.light-green {padding: 3px;}
+.people-cards{
+    margin-top: 2.5em;
+}
 
-.container { margin-top: 10px; margin-bottom: 10px; padding-top: 2px}
+.people-cards__card{
+    
+}
 
-.emi-tam {width: 14rem; height: 5rem;}
+.people-cards__card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
 
-.red {padding-left: 5px; padding-right: 5px; padding-bottom: 10px; padding-top: 10px;}
+.people-cards__card:hover .people-cards__title,
+.people-cards__card:hover .people-cards__text{
+    color: #63c6ae;
+}
+
+.people-cards__image{
+    width: 100%;
+}
+
+.people-cards__avatar{
+    border-radius: .5em;
+    margin: -55px auto;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.people-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 1px solid #dbe1e7;
+}
+
+.people-cards__title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+
+}
+
+.people-cards__text{
+    color: #929da5;
+    font-size: 14px;
+}
