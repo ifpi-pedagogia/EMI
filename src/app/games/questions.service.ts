@@ -15,7 +15,8 @@ export class QuestionsService {
         'Licenciatura, bacharelado e Tecnólogo',
         'Técnico integrado ao ensino médio, técnico concomitante e curso técnico subsequente',
         'Licenciatura em Biologia, licenciatura em matemática e tecnólogo em Análise e desenvolvimento de sistemas'
-      ]
+      ],
+      state: false
     },
     {
       question: 'O curso técnico integrado ao ensino médio é comumente chamado',
@@ -25,6 +26,7 @@ export class QuestionsService {
         'Ensino médio preparatório',
         'Ensino Técnico'
       ],
+      state: false
     },
     {
       question: 'No curso técnico integrado ao ensino médio, realizamos',
@@ -33,7 +35,8 @@ export class QuestionsService {
         'Dois cursos - um curso técnico e um curso de ensino médio',
         'Um único curso, que integra conteúdos de disciplinas de formação geral e específicas',
         'Um único curso, no entanto no turno estudamos disciplinas de formação geral e o contraturno é destinado às disciplinas técnicas'
-      ]
+      ],
+      state: false
     },
     {
       question: 'O ensino médio integrado, no IFPI campus Floriano possui 4 anos de duração. Mas posso cursar só até terceiro ano e receber o certificado do ensino médio.',
@@ -42,7 +45,8 @@ export class QuestionsService {
         'Podendo o aluno optar por cursar o ensino médio não integrado ao técnico',
         'Mas posso cursar só até o terceiro ano e receber só o certificado do ensino médio.',
         'Portanto, para concluir o curso é necessário cursar os quatro anos, não sendo possível sair no terceiro ano com certificado de conclusão do ensino médio.'
-      ]
+      ],
+      state: false
     },
     {
       question: 'A carga horária do ensino médio integrado é maior por que:',
@@ -51,7 +55,8 @@ export class QuestionsService {
         'Porque a matriz curricular agrega disciplinas técnicas, específicas do curso e de formação geral, diferentemente do ensino médio não integrado.',
         'Por que o curso é muito difícil e o aluno precisa ficar ocupado por mais tempo na escola.',
         'Porque “ensino integrado” significa a mesma coisa que “ensino integral” no qual o estudante passa o dia inteiro com atividades na escola.'
-      ]
+      ],
+      state: false
     },
     {
       question: 'A POLAE, Política de Assistência Estudantil do IFPI é direcionada aos estudantes matriculados nos cursos presenciais do IFPI e tem como objetivo',
@@ -60,7 +65,48 @@ export class QuestionsService {
         'Oferecer a todos os estudantes matriculados no IFPI, inclusive dos cursos superiores, auxílio financeiro para custear as despesas com deslocamento.',
         'Oferecer auxílio financeiro a todos os estudantes do ensino médio integrado, bastando para isso o aluno apresentar a carteirinha do estudante ao setor de serviço social',
         'Contribuir com ações de atendimento às necessidades básicas e de incentivo á formação acadêmica, visando o desenvolvimento integral dos estudantes.'
-      ]
+      ],
+      state: false
+    },
+    {
+      question: 'A definir',
+      rightAnswer: 'ainda nada',
+      alternatives: [
+        'A',
+        'B',
+        'C'
+      ],
+      state: false
+    },
+    {
+      question: 'A definir',
+      rightAnswer: 'ainda nada',
+      alternatives: [
+        'A',
+        'B',
+        'C'
+      ],
+      state: false
+    },
+    {
+      question: 'A definir',
+      rightAnswer: 'ainda nada',
+      alternatives: [
+        'A',
+        'B',
+        'C'
+      ],
+      state: false
+    },
+    {
+      question: 'A definir',
+      rightAnswer: 'ainda nada',
+      alternatives: [
+        'A',
+        'B',
+        'C'
+      ],
+      state: false
     }
   ];
 
@@ -113,15 +159,16 @@ export class QuestionsService {
     this.round++;
   }
 
-  public playerGame(response: string, current: number): void {
+  public playerGame(response: string, current: number): string {
     this.round = current;
     const r = this.verifyResponseUser(response);
     if (r) {
-      alert('Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer);
       this.acertou = true;
+      return 'Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer;
     } else {
-      alert('Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer);
       this.acertou = false;
+      return 'Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer;
+
     }
     // this.showPecaPremiun(r);
   }
@@ -139,37 +186,6 @@ export class QuestionsService {
 
   public plusScore(): void {
     this.score++;
-  }
-
-  public quebraCabeca(result: boolean): boolean {
-    this.controlNumQuestions++;
-    if (this.controlNumQuestions === 4) {
-      this.controlNumQuestions = 1;
-      this.control = 0;
-    }
-    if (result) {
-      this.control++;
-      if (this.control >= 2 && this.qtdPecas !== this.pecas - 1) {
-        this.control = 0;
-        return true;
-      } else if (this.control >= 2 && this.qtdPecas === this.pecas) {
-        this.control = 0;
-        return true;
-      }
-    }
-    return false;
-  }
-
-  public showPecaPremiun(r: boolean): void {
-    if (this.quebraCabeca(r)) {
-      this.showPeca = true;
-    } else {
-      this.showPeca = false;
-    }
-  }
-
-  public getImages(): Array<object> {
-    return this.imagens;
   }
 
 }

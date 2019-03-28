@@ -3,6 +3,12 @@
         <h5><i class='material-icons'>extension</i> Monte a logo do IFPI</h5>
       </div>
       <div class="container " *ngIf='perguntar'>
+        <div class='row' *ngIf='showMenssage'>
+          <p>{{menssageGame}}</p>
+          <button class="waves-effect waves-light btn btn-large" (click)='displayMenssage()'>
+            Ok
+          </button>
+        </div>
         <div class="row light-green lighten-2 emi-space">
            <p><strong>{{pergunta}}</strong></p>
            <p><strong>A</strong>) {{alt1}}</p>
@@ -15,34 +21,61 @@
             <a class="waves-effect waves-light btn btn-large" (click)='game(2, current)'>(  C  )</a>
         </div>
       </div>
-      <div *ngIf='!perguntar'>
+      <div *ngIf='!perguntar && !showMenssage'>
       <p>* Click em uma determinada peça para responder uma pergunta.</p>
 
       <div class='container indigo lighten-5 center'>
         <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[0] ? 'red' : '#DDDCDC'}"
+             <div [ngStyle]="{'background-color': questions[0].state ? 'red' : '#DDDCDC'}"
              class='my-space col s2 m-2 col-lg-2 btn'
              (click)='changeBackground(0)'>
              </div>
-             <div [ngStyle]="{'background-color': changeColor[1] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(1)'></div>
-             <div [ngStyle]="{'background-color': changeColor[2] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(2)'></div>
+             <div [ngStyle]="{'background-color': questions[1].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(1)'>
+             </div>
+             <div [ngStyle]="{'background-color': questions[2].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(2)'>
+             </div>
              <div class='my-space col s2 m-2 col-lg-2'></div>
          </div>
          <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[3] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(3)'></div>
-             <div [ngStyle]="{'background-color': changeColor[4] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(4)'></div>
+             <div [ngStyle]="{'background-color': questions[3].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(3)'>
+            </div>
+             <div [ngStyle]="{'background-color': questions[4].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(4)'>
+             </div>
              <div class='my-space col s2 m-2 col-lg-2'></div>
              <div class='my-space col s2 m-2 col-lg-2'></div>
          </div>
          <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[5] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(5)'></div>
-             <div [ngStyle]="{'background-color': changeColor[6] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(6)'></div>
-             <div [ngStyle]="{'background-color': changeColor[7] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(7)'></div>
+             <div [ngStyle]="{'background-color': questions[5].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(5)'>
+             </div>
+             <div [ngStyle]="{'background-color': questions[6].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(6)'>
+             </div>
+             <div [ngStyle]="{'background-color': questions[7].state ? 'green' : '#DDDCDC'}"
+                  class='my-space col s2 m-2 col-lg-2 btn'
+                  (click)='changeBackground(7)'>
+             </div>
              <div class='my-space col s2 m-2 col-lg-2'></div>
          </div>
          <div class='row center'>
-           <div [ngStyle]="{'background-color': changeColor[8] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(8)'></div>
-           <div [ngStyle]="{'background-color': changeColor[9] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(9)'></div>
+           <div [ngStyle]="{'background-color': questions[8].state ? 'green' : '#DDDCDC'}"
+                class='my-space col s2 m-2 col-lg-2 btn'
+                (click)='changeBackground(8)'>
+           </div>
+           <div [ngStyle]="{'background-color': questions[9].state ? 'green' : '#DDDCDC'}"
+                class='my-space col s2 m-2 col-lg-2 btn'
+                (click)='changeBackground(9)'>
+           </div>
            <div class='my-space col s2 m-2 col-lg-2'></div>
            <div class='my-space col s2 m-2 col-lg-2'></div>
          </div>
