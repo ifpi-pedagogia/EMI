@@ -10,77 +10,77 @@ export class DepositionsService {
   public myDepositions: Array<Depositions> = [
     {
       id: 1,
-      url: 'assets/videos/vAnabelRafael.mp4',
+      url: '',
       author: 'Ana Bel e Rafael'
     },
     {
       id: 2,
-      url: 'assets/videos/vAnaLuisa.mp4',
+      url: '',
       author: 'Ana Luisa'
     },
     {
       id: 3,
-      url: 'assets/videos/vAnthony.mp4',
+      url: '',
       author: 'Anthony'
     },
     {
       id: 4,
-      url: 'assets/videos/vBeatriz.mp4',
+      url: '',
       author: 'Beatriz'
     },
     {
       id: 5,
-      url: 'assets/videos/vCamilaOliveira.mp4',
+      url: '',
       author: 'Camila Oliveira'
     },
     {
       id: 6,
-      url: 'assets/videos/vElias.mp4',
+      url: '',
       author: 'Elias'
     },
     {
       id: 7,
-      url: 'assets/videos/vGian.mp4',
+      url: '',
       author: 'Gian'
     },
     {
       id: 8,
-      url: 'assets/videos/vJuliano.mp4',
+      url: '',
       author: 'Juliano'
     },
     {
       id: 9,
-      url: 'assets/videos/vMariaKatiane1.mp4',
+      url: '',
       author: 'Maria Catyane'
     },
     {
       id: 10,
-      url: 'assets/videos/vMariaKatiane2.mp4',
+      url: '',
       author: 'Maria Catyane'
     },
     {
       id: 11,
-      url: 'assets/videos/vRenata.mp4',
+      url: '',
       author: 'Renata'
     },
     {
       id: 12,
-      url: 'assets/videos/vRenataSammer.mp4',
+      url: '',
       author: 'Renata Sammer'
     },
     {
       id: 13,
-      url: 'assets/videos/vTiago.mp4',
+      url: '',
       author: 'Tiago'
     },
     {
       id: 14,
-      url: 'assets/videos/vMarlon1.mp4',
+      url: '',
       author: 'Marlon'
     },
     {
       id: 15,
-      url: 'assets/videos/vMarlon2.mp4',
+      url: '',
       author: 'Marlon'
     },
     /*
