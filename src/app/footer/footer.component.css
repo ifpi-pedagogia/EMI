@@ -1,4 +1,29 @@
-emi-color-twitter {background-color:  #00aced}
-emi-color-facebook {background-color: #3b5998}
-emi-color-instagram {background-color: #517fa4}
-emi-copyright {background-color: #0B3B0B}
+.footer{
+    background-color: #242a2c;
+    padding: 50px 0 30px;
+    color: #454e51;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.footer__links li{
+    color: #454e51;
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: #454e51;
+}
+
+.footer__copy{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container{
+    padding: 20px;
+}
