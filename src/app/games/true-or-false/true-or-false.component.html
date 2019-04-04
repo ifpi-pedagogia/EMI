@@ -3,16 +3,19 @@
         <div class="col l5 push-l1 m3 push-m1 s12">
           <img [src]='imgGame' class="responsive-img">
         </div>
-
-        <div *ngIf='!finishGame' class="col l6 offset-l1 m8 offset-m1 s12">
+        <!-- Caixa com a pergunta da rodada-->
+        <div *ngIf='displayQuestion' class="col l6 offset-l1 m8 offset-m1 s12">
           <p style="text-align: justify;">{{questions[round].question}}</p>
           <hr>
-          <a class="emiBtn" (click)='verifyResponse(false)'>  MITO  </a>
-          <a class=emiBtn (click)='verifyResponse(true)'> VERDADE </a>
+          <button class="emiBtn" (click)='verifyResponse(false)'>  MITO  </button>
+          <button class=emiBtn (click)='verifyResponse(true)'> VERDADE </button>
         </div>
-
-
-        
+        <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
+        <div *ngIf="displayResult">
+          <p>{{showMensseger()}}</p>
+          <button (click)="incrementRound()">OKAY</button>
+        </div>
+        <!-- Fim de jogo e resultados gerais (aproveitamento) etc -->
         <div *ngIf='finishGame' class="emi-distance emi-font col">
             <h4>Fim de jogo!</h4>
             <ol>
@@ -20,8 +23,8 @@
               <li>Desempenho: {{ perfomance | number: '2.1-1' }}%</li>
             </ol>
             <hr class="my-4">
-            <a class='emi-btn' [routerLink]="['/games/quiz']">Cancelar</a>
-            <a class='emi-btn' (click)='restart()'>Próxima rodada</a>
+            <button class='emi-btn' [routerLink]="['/games/quiz']">Cancelar</button>
+            <button class='emi-btn' (click)='restart()'>Próxima rodada</button>
         </div>
     </div>
 </div>

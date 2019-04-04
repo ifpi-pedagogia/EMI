@@ -75,16 +75,43 @@ export class TrueOrFalseComponent implements OnInit {
       this.resultMensseger = 'Tente novamente: ';
       this.setErrors(this.questions[this.round]);
     }
-    // exibir mensagem e avançar para a próxima rodada
-    alert(this.resultMensseger + this.questions[this.round].justification);
-    this.round++;
+    // controle de exibição das 'caixas' de perguntas e respostas
+    this.alterDisplays();
+  }
 
-    // verificar término do jogo
+  // a rodada acabou?
+  private verifyFinishGame(): void {
+    console.log('round: ' + this.round + 'max: ' + this.numMaxQuestion);
     if (this.round === this.numMaxQuestion) {
       this.finishGame = true;
       this.setPerfomance();
       this.setClassification();
+      this.notDisplays();
+    } else {
+      // controle de exibição das 'caixas' de perguntas e respostas
+      this.alterDisplays();
     }
+
+  }
+
+  private notDisplays(): void {
+    this.displayQuestion = false;
+    this.displayResult = false;
+  }
+
+  public alterDisplays(): void {
+    this.alterDisplayResult();
+    this.alterDisplayQuestion();
+  }
+
+  public incrementRound(): void {
+    this.round++;
+    // verificar término do jogo
+    this.verifyFinishGame();
+  }
+
+  public showMensseger(): string {
+    return this.resultMensseger + this.questions[this.round].justification;
   }
 
   public setPerfomance(): void {
@@ -115,5 +142,7 @@ export class TrueOrFalseComponent implements OnInit {
     this.displayResult = !this.displayResult;
   }
 
-  public alte
+  public alterDisplayQuestion(): void {
+    this.displayQuestion = !this.displayQuestion;
+  }
 }
