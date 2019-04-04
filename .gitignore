@@ -119,4 +119,5 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+.package-lock.json
 # End of https://www.gitignore.io/api/node,angular
