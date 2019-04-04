@@ -40,9 +40,9 @@ export class TrueOrFalseComponent implements OnInit {
   }
 
   private sorteio(): void {
-    console.log('Sorteio acionado');
+    // debug: console.log('Sorteio acionado');
     const num = this.arraySorteado;
-    if (num === 3) {
+    if (num === 4) {
       this.arraySorteado = 1;
     } else {
       this.arraySorteado++;
@@ -81,7 +81,7 @@ export class TrueOrFalseComponent implements OnInit {
 
   // a rodada acabou?
   private verifyFinishGame(): void {
-    console.log('round: ' + this.round + 'max: ' + this.numMaxQuestion);
+    // debug: console.log('round: ' + this.round + 'max: ' + this.numMaxQuestion);
     if (this.round === this.numMaxQuestion) {
       this.finishGame = true;
       this.setPerfomance();

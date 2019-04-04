@@ -124,8 +124,10 @@ export class TrueOrFalseService {
       this.bdQuestions = this.questionsOne;
     } else if (idArray === 2) {
       this.bdQuestions = this.questionsTwo;
-    } else {
+    } else if (idArray === 3) {
       this.bdQuestions = this.questionsTre;
+    } else {
+      this.bdQuestions = this.questionsFor;
     }
   }
 
