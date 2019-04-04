@@ -24,6 +24,8 @@ export class TrueOrFalseComponent implements OnInit {
   public numMaxQuestion: number; // limite de questões.
   public arraySorteado = 0;
   public imgGame: string;
+  public displayResult: boolean; // exibir ou não div com 'as respostas'?
+  public displayQuestion: boolean; // exibir ou não as perguntas?
 
   constructor(private service: TrueOrFalseService) { }
 
@@ -45,7 +47,7 @@ export class TrueOrFalseComponent implements OnInit {
     } else {
       this.arraySorteado++;
     }
-    // lógica sortei
+    // lógica sorteio
     this.service.setQuestions(this.arraySorteado);
   }
 
@@ -60,6 +62,8 @@ export class TrueOrFalseComponent implements OnInit {
     this.resultMensseger = undefined;
     this.ranking = undefined;
     this.numMaxQuestion = this.questions.length;
+    this.displayQuestion = true;
+    this.displayResult = false;
   }
 
   public verifyResponse(userResponse: boolean): void {
@@ -71,7 +75,7 @@ export class TrueOrFalseComponent implements OnInit {
       this.resultMensseger = 'Tente novamente: ';
       this.setErrors(this.questions[this.round]);
     }
-    // exibir mensagem e parte para a próxima rodada
+    // exibir mensagem e avançar para a próxima rodada
     alert(this.resultMensseger + this.questions[this.round].justification);
     this.round++;
 
@@ -106,4 +110,10 @@ export class TrueOrFalseComponent implements OnInit {
 
   }
 
+  // controlar exibição da div de resultados (acertou ou + justificativa)
+  public alterDisplayResult(): void {
+    this.displayResult = !this.displayResult;
+  }
+
+  public alte
 }
