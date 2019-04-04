@@ -1,11 +1,7 @@
 .header{
     background-color: #FFF;
-    width: 100%;   
-}
-
-.header__bar-container{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    display: block;
 }
 
 .logo-text{
@@ -54,4 +50,41 @@
 
 .header__nav a:hover{
     color: #63c6ae;
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        position: fixed;
+        display: flex;
+        box-sizing: border-box;
+        clear: none;
+        justify-content: space-between;
+    }
+
+    .logo-text{
+        width: 15%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .header__nav{
+        float: left;
+        width: 55%;
+    }
+
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+    }
+
+    .header__nav li{
+        flex-grow: 1;
+        border-bottom: none;
+        background-color: white;
+    }
+
+    .header__nav a{
+        background-color: white;
+    }
 }
