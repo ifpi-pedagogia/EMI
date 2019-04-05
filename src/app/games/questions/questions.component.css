@@ -1,4 +1,78 @@
-.my-space {margin: 2px; height: 5rem; width: 4rem;}
+.logo-game{
+    border: 1px dotted red;
+    width: 100%;
+    
+    z-index: -1;
+    position: relative;
+}
 
-.red {padding: 5px; margin-top: 10px; margin-bottom: 10px;}
-.emi-space {padding: 5px;}
+.wrapper{
+    border: 3px solid blue;
+
+    margin-top: 80px;
+    width: 20%;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+   
+    grid-gap: 5px;
+    display: grid;
+
+    
+
+    grid-template-columns: repeat(3, minmax(80px, 100px));
+    grid-template-rows: repeat(4, minmax(80px, 100px));
+    grid-template-areas: 
+    "zero one two"
+    "three four   ."
+    "five   six  seven"
+    "eight   nine       ."
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: red;
+    grid-area: zero;
+}
+
+.square{
+    border-radius: 10%;
+    background-color: green;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.nine{
+    grid-area: nine;
+}
