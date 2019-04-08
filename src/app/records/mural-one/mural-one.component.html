@@ -1,8 +1,6 @@
-<div *ngFor='let item of mural' class="container">
+<!-- <div *ngFor='let item of mural' class="container">
   <section class="people-cards">
     <article class="people-cards__card">
-      <img src="https://static1.squarespace.com/static/57ec70cfd482e940c082362d/t/5818b6a4d482e9494b9392a1/1478014675168/cartoonscience_wallpaper1a.jpg?format=1500w" alt="" class="people-cards__image">
-  
       <div class="people-cards__avatar">
         <img [src]='item.iconPerfil' alt="">
       </div>
@@ -13,5 +11,28 @@
       </div>
     </article>
   </section>
+</div>
+-->
+
+<div *ngFor='let item of mural' class="blockquote-container">
+  <h2>Lorem ipsum</h2>
+  <div class="testimonial-quote group">
+    <img [src]='item.iconPerfil' alt="">
+
+    <div class="quote-container">
+      <blockquote>
+        <p>
+          {{item.deposition}}
+        </p>
+      </blockquote>
+      <cite>
+        <span>
+          nome do aluno
+        </span>
+        <br>
+        Curso
+      </cite>
+    </div>
+  </div>
 </div>
 
