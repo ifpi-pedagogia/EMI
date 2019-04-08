@@ -12,8 +12,9 @@ h1 {
   
     justify-content: flex-start;
     width: auto;
-    padding: 2em;
+    padding: 80px;
     border: 0;
+    box-sizing: border-box;
 }
 
 .testimonial-quote {
@@ -67,7 +68,7 @@ h1 {
     width: 120px;
     height: 120px;
     position: absolute;
-    top: -.2em; 
+    top: 0em; 
     left: 0;    
 }
 
@@ -107,4 +108,16 @@ h1 {
 
 .testimonial-quote.right cite {
     text-align: right; 
+}
+
+@media screen and (max-width: 1024px){
+  .container{
+      padding-top: 110px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+    .testimonial-quote blockquote p {
+        max-width: 900px;
+    }
 }
