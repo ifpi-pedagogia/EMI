@@ -6,8 +6,14 @@ h1 {
   margin-bottom: 40px;
 }
 
-.blockquote-container{
-    margin: 3em 3em;
+.container{
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: flex-start;
+    width: auto;
+    padding: 2em;
+    border: 0;
 }
 
 .testimonial-quote {
@@ -29,7 +35,7 @@ h1 {
     margin: 0;
     position: relative;
     text-shadow: 0 1px white;
-    z-index: 600;
+    z-index: .8;
 }
 
 .testimonial-quote blockquote * {
@@ -43,7 +49,7 @@ h1 {
 
 .testimonial-quote blockquote p:first-child:before {
     content: '\201C';
-    color: #81bedb;
+    color: #63c6ae;
     font-size: 7.5em;
     font-weight: 700;
     opacity: .3;
@@ -55,7 +61,7 @@ h1 {
 }
 
 .testimonial-quote img {
-    border: 3px solid #9CC1D3;
+    border: 3px solid #63c6ae;
     border-radius: 50%;
     display: block;
     width: 120px;
