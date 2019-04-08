@@ -31,6 +31,7 @@
 }
 
 .header__nav li{
+    margin-left: 5px;
     list-style-type: none;
     background: #242c2c;
     text-align: center;
@@ -58,7 +59,7 @@
         display: flex;
         box-sizing: border-box;
         clear: none;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .logo-text{
@@ -86,5 +87,11 @@
 
     .header__nav a{
         background-color: white;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header{
+        justify-content: space-between;
     }
 }
