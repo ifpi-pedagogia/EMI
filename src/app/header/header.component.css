@@ -2,6 +2,7 @@
     background-color: #FFF;
     width: 100%;
     display: block;
+    z-index: 1;
 }
 
 .logo-text{
