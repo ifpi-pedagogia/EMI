@@ -1,6 +1,6 @@
 .hero{
-    height: 80vh;
-    padding: 40px 20px;
+    height: 100vh;
+    padding-top:0;
     text-align: center;
     background-size: cover;
     display: flex;

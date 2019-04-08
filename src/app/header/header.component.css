@@ -5,6 +5,9 @@
     z-index: 1;
     position: absolute;
     clear: both;
+    height: 50vh;
+    margin: 0;
+
 }
 
 .logo-text{
@@ -26,6 +29,7 @@
 
 .header__nav{
     clear: left;
+    margin: 0;
 }
 
 .header__nav ul{
@@ -34,7 +38,6 @@
 }
 
 .header__nav li{
-    margin-left: 5px;
     list-style-type: none;
     background: #242c2c;
     text-align: center;
@@ -63,6 +66,7 @@
         box-sizing: border-box;
         clear: none;
         justify-content: space-around;
+        height: 8vh;
     }
 
     .logo-text{
