@@ -1,5 +1,4 @@
 .logo-game{
-    border: 1px dotted red;
     width: 100%;
     
     z-index: -1;
@@ -7,8 +6,6 @@
 }
 
 .wrapper{
-    border: 3px solid blue;
-
     margin-top: 80px;
     width: 20%;
     margin-left: 15px;
