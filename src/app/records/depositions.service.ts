@@ -10,7 +10,7 @@ export class DepositionsService {
   public myDepositions: Array<Depositions> = [
     {
       id: 1,
-      url: '',
+      url: 'https://www.youtube.com/embed/myM4kuB3ke8',
       author: 'Ana Bel e Rafael'
     },
     {
@@ -20,22 +20,22 @@ export class DepositionsService {
     },
     {
       id: 3,
-      url: '',
+      url: 'https://www.youtube.com/embed/GWJYuwnCPss',
       author: 'Anthony'
     },
     {
       id: 4,
-      url: '',
+      url: 'https://www.youtube.com/embed/vtHoOjxLSyk',
       author: 'Beatriz'
     },
     {
       id: 5,
-      url: '',
+      url: 'www.youtube.com/embed/mCbY55edrnQ',
       author: 'Camila Oliveira'
     },
     {
       id: 6,
-      url: '',
+      url: 'https://www.youtube.com/embed/1GbyUfzVBoI',
       author: 'Elias'
     },
     {
@@ -45,22 +45,22 @@ export class DepositionsService {
     },
     {
       id: 8,
-      url: '',
+      url: 'https://www.youtube.com/embed/TIgtY2FGmos',
       author: 'Juliano'
     },
     {
       id: 9,
-      url: '',
+      url: 'https://www.youtube.com/embed/06ne77ifibw',
       author: 'Maria Catyane'
     },
     {
       id: 10,
-      url: '',
+      url: 'https://www.youtube.com/embed/Q7imw3bvImc',
       author: 'Maria Catyane'
     },
     {
       id: 11,
-      url: '',
+      url: 'https://www.youtube.com/embed/goVXAjykDy4',
       author: 'Renata'
     },
     {
@@ -70,7 +70,7 @@ export class DepositionsService {
     },
     {
       id: 13,
-      url: '',
+      url: 'https://www.youtube.com/embed/u3bX-76FGRE',
       author: 'Tiago'
     },
     {
@@ -83,6 +83,11 @@ export class DepositionsService {
       url: '',
       author: 'Marlon'
     },
+    {
+      id: 16,
+      url: 'https://www.youtube.com/embed/zffknHFmlec',
+      author:'Maria Regina'
+    }
     /*
     {
       id: 16,
