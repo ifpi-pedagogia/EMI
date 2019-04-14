@@ -1,34 +1,37 @@
-<main class="grey lighten-4">
-    <div class="row  grey lighten-4">
-      <div class="col l3 m3 s12">
-        <div class="card">
-          <div class="card-image">
-            <img src="assets/imagens/4.jpeg">
-          </div>
-          <div class="card-content">
-            <p>Aluno: {{deposition.author}}</p>
-          </div>
-        </div>
+<main>
+  <section class="student-info">    
+    <div>
+      <div>
+        <img src="assets/imagens/4.jpeg">
       </div>
-      <div class="col l7 offset-l1 m8 offset-m1 pull-m1 s12">
-        <div class="divider"></div>
-        <div class="section">
-          <h5>Depoimento</h5>
-          <video class="responsive-video" controls="true">
-            <source [src]="deposition.url" type="video/mp4">
-          </video>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-          <h5>Fotos</h5>
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="assets/imagens/avatar.jpg"> <!-- random image -->
-              </li>
-            </ul>
-          </div>
-        </div>
+
+      <div>
+        <p>Aluno: {{deposition.author}}</p>
       </div>
+
     </div>
+  </section>
+      
+  <section>
+    <div>
+      <h5>Depoimento</h5>
+        <iframe 
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/myM4kuB3ke8"
+          frameborder="0"
+          allow="accelerometer;
+          autoplay;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture"
+          allowfullscreen>
+        </iframe>
+    </div>
+  </section>
+        
+        <div>
+          <h5>Fotos</h5>
+        </div>
+
   </main>
