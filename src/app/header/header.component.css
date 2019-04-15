@@ -30,6 +30,7 @@
 .header__nav{
     clear: left;
     margin: 0;
+    overflow: hidden;
 }
 
 .header__nav ul{
