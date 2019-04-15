@@ -1,38 +1,36 @@
 <main>
-  <section class="student-info">    
-    <div>
+  <div class="wrapper">
+    <section class="student-info">    
       <div>
-        <img src="assets/imagens/4.jpeg">
-      </div>
-
-      <div>
-        <p>Aluno: {{deposition.author}}</p>
-      </div>
-
-    </div>
-  </section>
-      
-  <section>
-    <div>
-      <h5>Depoimento</h5>
-       <!-- Adicionar src dinamicamente--> 
-      <iframe 
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/myM4kuB3ke8"
-        frameborder="0"
-        allow="accelerometer;
-        autoplay;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-        
-        <div>
-          <h5>Fotos</h5>
+        <div class="student-info__photo">
+          <img src="assets/imagens/4.jpeg">
         </div>
-
-  </main>
+      
+        <div>
+          <h2>
+            <strong class="student-info__namem">
+              {{deposition.author}}
+            </strong>
+          </h2>
+          <strong>Curso: Meio ambiente</strong>
+        </div>
+      
+      </div>
+    </section>
+        
+    <section class="student-deposition">
+      <div>
+         <!-- Adicionar src dinamicamente--> 
+        <iframe 
+          class="student-deposition__video"
+          src="https://www.youtube.com/embed/myM4kuB3ke8"
+          frameborder="0"
+          allow="accelerometer;
+          encrypted-media;
+          gyroscope;"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </div>
+</main>
