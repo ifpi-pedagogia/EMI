@@ -1,5 +1,5 @@
 .hero{
-    height: 100vh;
+    height: 92vh;
     padding-top:0;
     text-align: center;
     background-size: cover;
@@ -12,6 +12,11 @@
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
+}
+
+.hero__video{
+    width: 80%;
+    height: 90%;
 }
 
 @-webkit-keyframes Gradient {
