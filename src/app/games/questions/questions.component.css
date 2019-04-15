@@ -28,14 +28,18 @@
 }
 
 .circle{
+    /* display: flex !important; */
+    /* display: block !important; */
     border-radius: 50%;
-    background-color: red;
+    background-color:#DDDCDC;
     grid-area: zero;
 }
 
 .square{
+    /* display: flex !important; 
+    display: block !important; */
     border-radius: 10%;
-    background-color: green;
+    background-color:#DDDCDC;
 }
 
 .one{
@@ -73,3 +77,24 @@
 .nine{
     grid-area: nine;
 }
+
+/*
+.my-click {
+    display: block !important;
+}
+
+my-div {width: 100%;
+    
+    z-index: -1;
+    position: relative;}
+
+my-btns{
+    margin-top: 80px;
+    width: 20%;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    background-color:#DDDCDC;
+}
+*/

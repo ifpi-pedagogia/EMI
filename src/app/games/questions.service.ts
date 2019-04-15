@@ -70,6 +70,7 @@ export class QuestionsService {
   public score: number;
   public qtdPecas: number;
   public pecas: number;
+  public responser: string;
   public control: number;
   public controlNumQuestions: number;
   public numMaxQuestions: number;
@@ -89,6 +90,7 @@ export class QuestionsService {
    this.questionsErrors = [];
    this.round = 0;
    this.score = 0;
+   this.responser = undefined;
    this.qtdPecas = 0;
    this.pecas = 9;
    this.control = 0;
@@ -117,10 +119,10 @@ export class QuestionsService {
     this.round = current;
     const r = this.verifyResponseUser(response);
     if (r) {
-      alert('Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer);
+      this.responser = 'Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer;
       this.acertou = true;
     } else {
-      alert('Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer);
+      this.responser = 'Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer;
       this.acertou = false;
     }
     // this.showPecaPremiun(r);

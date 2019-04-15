@@ -16,10 +16,12 @@ export class QuestionsComponent implements OnInit {
   public changeColor: Array<boolean>;
   public perguntar: boolean;
   public pergunta: string;
+  public resposta: string;
   public alt1: string;
   public alt2: string;
   public alt3: string;
   public current: number;
+  public result: boolean;
 
   constructor(private service: QuestionsService) { }
 
@@ -31,6 +33,7 @@ export class QuestionsComponent implements OnInit {
     this.service.init();
     this.questions = this.service.getQuestions();
     this.round = 0;
+    this.result = false;
     this.pecaQuebraCaebeca = false;
     this.perguntar = false;
     this.changeColor = [false, false, false, false, false, false, false, false, false, false];
@@ -44,6 +47,8 @@ export class QuestionsComponent implements OnInit {
     if (this.service.getAcertou()) {
       this.changeColor[current] = !this.changeColor[current];
     }
+    this.resposta = this.service.responser;
+    this.showResult();
   }
 
   private setAlternatives(current: number): void {
@@ -56,14 +61,17 @@ export class QuestionsComponent implements OnInit {
 
   public changeBackground(indice: number): void {
     if (this.changeColor[indice] === false) {
+      console.log('OIIIII');
       this.setAlternatives(indice);
       this.perguntar = !this.perguntar;
     } else {
-      // emita uma mensagem para o usuário (óbvio que não é próxima linha)
+      // emita uma mensagem para o usuário (óbvio que não é a próxima linha)
       console.log('Bloqueado!');
     }
+  }
 
-
+  public showResult(): void {
+    this.result = !this.result;
   }
 
 }

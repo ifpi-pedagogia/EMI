@@ -52,18 +52,71 @@
 </div>
 
 -->
-
-<div class="logo-game">
-  <div class="wrapper">
-    <div class="circle"></div>
-    <div class="square one"></div>
-    <div class="square two"></div>
-    <div class="square three"></div>
-    <div class="square four"></div>
-    <div class="square five"></div>
-    <div class="square six"></div>
-    <div class="square seven"></div>
-    <div class="square eight"></div>
-    <div class="square nine"></div>
+<div *ngIf='perguntar && !result'>
+  <div>
+     <p><strong>{{pergunta}}</strong></p>
+     <p><strong>A</strong>) {{alt1}}</p>
+     <p><strong>B</strong>) {{alt2}}</p>
+     <p><strong>C</strong>) {{alt3}}</p>
+  </div>
+  <div>
+      <button (click)='game(0, current)'>(  A  )</button>
+      <button (click)='game(1, current)'>(  B  )</button>
+      <button (click)='game(2, current)'>(  C  )</button>
   </div>
 </div>
+
+<div *ngIf="result">
+  {{resposta}}
+  <button (click)='showResult()'>Okay</button>
+</div>
+
+<div *ngIf='!perguntar && !result'>
+  <p>* Click em uma determinada peça para responder uma pergunta.</p>
+  <div class="logo-game">
+    <div class="wrapper">
+      <button class="circle" 
+      [ngStyle]="{'background-color': changeColor[0] ? 'red' : '#DDDCDC'}"
+      (mousemove)='changeBackground(0)'>  
+      </button>
+      <div class="square one"
+      [ngStyle]="{'background-color': changeColor[1] ? 'green' : '#DDDCDC'}">
+        <a class="square one" (click)='changeBackground(1)' class="my-click"></a>
+      </div>
+      <div class="square two"
+      [ngStyle]="{'background-color': changeColor[2] ? 'green' : '#DDDCDC'}">
+        <a (onclick)='changeBackground(2)' class='my-click'></a>
+      </div>
+      <div class="square three"
+      [ngStyle]="{'background-color': changeColor[3] ? 'green' : '#DDDCDC'}">
+        <a (onclick)='changeBackground(3)'></a>
+      </div>
+      <div class="square four"
+      [ngStyle]="{'background-color': changeColor[4] ? 'green' : '#DDDCDC'}">
+          <button (onclick)='changeBackground(4)'></button>
+      </div>
+      <div class="square five"
+      [ngStyle]="{'background-color': changeColor[5] ? 'green' : '#DDDCDC'}">
+          <a (onclick)='changeBackground(5)'></a>
+      </div>
+      <div class="square six"
+      [ngStyle]="{'background-color': changeColor[6] ? 'green' : '#DDDCDC'}">
+          <a (onclick)='changeBackground(6)'></a>
+      </div>
+      <div class="square seven"
+      [ngStyle]="{'background-color': changeColor[7] ? 'green' : '#DDDCDC'}">
+          <a (onclick)='changeBackground(7)'></a>
+      </div>
+      <div class="square eight"
+      [ngStyle]="{'background-color': changeColor[8] ? 'green' : '#DDDCDC'}">
+          <a (onclick)='changeBackground(8)'></a>
+      </div>
+      <div class="square nine"
+      [ngStyle]="{'background-color': changeColor[9] ? 'green' : '#DDDCDC'}">
+          <a (onclick)='changeBackground(9)'></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button (click)='changeBackground(1)'>teste 02</button>
