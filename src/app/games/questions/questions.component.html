@@ -52,7 +52,7 @@
 </div>
 
 -->
-<div *ngIf='perguntar && !result'>
+<div *ngIf='perguntar && !result' class='my-barra'>
   <div>
      <p><strong>{{pergunta}}</strong></p>
      <p><strong>A</strong>) {{alt1}}</p>
@@ -66,7 +66,7 @@
   </div>
 </div>
 
-<div *ngIf="result">
+<div *ngIf="result" class='my-barra'>
   {{resposta}}
   <button (click)='showResult()'>Okay</button>
 </div>
