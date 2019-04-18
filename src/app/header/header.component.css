@@ -73,24 +73,28 @@
     .logo-text{
         width: 15%;
         box-sizing: border-box;
-        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .header__nav{
-        float: left;
         width: 55%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .header__nav ul{
         display: flex;
-        justify-content: space-around;
-        max-width: 800px;
+        align-content: space-around;     
     }
 
     .header__nav li{
         flex-grow: 1;
         border-bottom: none;
         background-color: white;
+        margin-left: 2em;
     }
 
     .header__nav a{
