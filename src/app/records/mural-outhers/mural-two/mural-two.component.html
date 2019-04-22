@@ -1,9 +1,9 @@
-<div class="row">
-  <div class="row red darken-4 white-text center">
-    <h5>Do 4º para o 1º ano</h5>
+<div>
+  <div class='my-barra'>
+    <h5>De veteranos para novatos</h5>
   </div>
-  <div class="col s4 m4 l3 emi-card-img" *ngFor="let item of depositions">
-      <div class="card blue-grey lighten-4">
+  <div *ngFor="let item of depositions">
+      <div class="card blue-grey lighten-4" style="background-color: rgb(33, 119, 199); padding: 10px; margin: 10px;">
           <div class="card-content">
              <p class='center'><strong class='green-text text-darken-4'>{{item.nameStudent}}</strong></p>
              <p><strong>1){{questionOne}}</strong></p>
