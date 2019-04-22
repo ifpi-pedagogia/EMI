@@ -22,6 +22,7 @@ export class QuestionsComponent implements OnInit {
   public alt3: string;
   public current: number;
   public result: boolean;
+  public unidade: number;
 
   constructor(private service: QuestionsService) { }
 
@@ -31,6 +32,7 @@ export class QuestionsComponent implements OnInit {
 
   public init(): void {
     this.service.init();
+    this.unidade = 0;
     this.questions = this.service.getQuestions();
     this.round = 0;
     this.result = false;
@@ -45,6 +47,7 @@ export class QuestionsComponent implements OnInit {
     this.perguntar = false;
     this.round = this.service.round;
     if (this.service.getAcertou()) {
+      // this.plusUnidade();
       this.changeColor[current] = !this.changeColor[current];
     }
     this.resposta = this.service.responser;
@@ -61,17 +64,34 @@ export class QuestionsComponent implements OnInit {
 
   public changeBackground(indice: number): void {
     if (this.changeColor[indice] === false) {
-      console.log('OIIIII');
       this.setAlternatives(indice);
       this.perguntar = !this.perguntar;
     } else {
-      // emita uma mensagem para o usuário (óbvio que não é a próxima linha)
+      // emita uma mensagem para o usuário (óbvio que não será à próxima linha)
       console.log('Bloqueado!');
     }
   }
 
   public showResult(): void {
     this.result = !this.result;
+  }
+
+  // método para uso do grid
+  public plusUnidade(): void {
+    this.unidade = this.unidade + 1;
+  }
+
+  public gameGrid(r: number): void {
+    const resp = this.questions[this.unidade].alternatives[r];
+    this.service.playerGame(resp, this.unidade);
+    this.perguntar = false;
+    this.round = this.service.round;
+    if (this.service.getAcertou()) {
+      this.changeColor[this.unidade] = !this.changeColor[this.unidade];
+      this.plusUnidade();
+    }
+    this.resposta = this.service.responser;
+    this.showResult();
   }
 
 }
