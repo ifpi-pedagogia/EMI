@@ -1,57 +1,3 @@
-<!-- <div class="container">
-      <div class='red darken-3 white-text center'>
-        <h5><i class='material-icons'>extension</i> Monte a logo do IFPI</h5>
-      </div>
-      <div class="container " *ngIf='perguntar'>
-        <div class="row light-green lighten-2 emi-space">
-           <p><strong>{{pergunta}}</strong></p>
-           <p><strong>A</strong>) {{alt1}}</p>
-           <p><strong>B</strong>) {{alt2}}</p>
-           <p><strong>C</strong>) {{alt3}}</p>
-        </div>
-        <div class="row">
-            <a class="waves-effect waves-light btn btn-large" (click)='game(0, current)'>(  A  )</a>
-            <a class="waves-effect waves-light btn btn-large" (click)='game(1, current)'>(  B  )</a>
-            <a class="waves-effect waves-light btn btn-large" (click)='game(2, current)'>(  C  )</a>
-        </div>
-      </div>
-      <div *ngIf='!perguntar'>
-      <p>* Click em uma determinada peça para responder uma pergunta.</p>
-
-      <div class='container indigo lighten-5 center'>
-        <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[0] ? 'red' : '#DDDCDC'}"
-             class='my-space col s2 m-2 col-lg-2 btn'
-             (click)='changeBackground(0)'>
-             </div>
-             <div [ngStyle]="{'background-color': changeColor[1] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(1)'></div>
-             <div [ngStyle]="{'background-color': changeColor[2] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(2)'></div>
-             <div class='my-space col s2 m-2 col-lg-2'></div>
-         </div>
-         <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[3] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(3)'></div>
-             <div [ngStyle]="{'background-color': changeColor[4] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(4)'></div>
-             <div class='my-space col s2 m-2 col-lg-2'></div>
-             <div class='my-space col s2 m-2 col-lg-2'></div>
-         </div>
-         <div class='row center'>
-             <div [ngStyle]="{'background-color': changeColor[5] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(5)'></div>
-             <div [ngStyle]="{'background-color': changeColor[6] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(6)'></div>
-             <div [ngStyle]="{'background-color': changeColor[7] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(7)'></div>
-             <div class='my-space col s2 m-2 col-lg-2'></div>
-         </div>
-         <div class='row center'>
-           <div [ngStyle]="{'background-color': changeColor[8] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(8)'></div>
-           <div [ngStyle]="{'background-color': changeColor[9] ? 'green' : '#DDDCDC'}" class='my-space col s2 m-2 col-lg-2 btn' (click)='changeBackground(9)'></div>
-           <div class='my-space col s2 m-2 col-lg-2'></div>
-           <div class='my-space col s2 m-2 col-lg-2'></div>
-         </div>
-
-      </div>
-
-</div>
-
--->
 <div *ngIf='perguntar && !result' class='my-barra'>
   <div>
      <p><strong>{{pergunta}}</strong></p>
@@ -60,9 +6,9 @@
      <p><strong>C</strong>) {{alt3}}</p>
   </div>
   <div>
-      <button (click)='game(0, current)'>(  A  )</button>
-      <button (click)='game(1, current)'>(  B  )</button>
-      <button (click)='game(2, current)'>(  C  )</button>
+      <button (click)='gameGrid(0)'>(  A  )</button>
+      <button (click)='gameGrid(1)'>(  B  )</button>
+      <button (click)='gameGrid(2)'>(  C  )</button>
   </div>
 </div>
 
@@ -73,14 +19,15 @@
 
 <div *ngIf='!perguntar && !result'>
   <div class='my-barra'>
-    <p>* Click em uma determinada peça para responder uma pergunta.</p>
+    <p>* Click no botão</p>
+    <button (click)='changeBackground(unidade)'>Peça {{unidade + 1}}</button>
   </div>
   <div class="logo-game">
     <div class="wrapper">
-      <button class="circle" 
+      <a class="circle" 
       [ngStyle]="{'background-color': changeColor[0] ? 'red' : '#DDDCDC'}"
       (mousemove)='changeBackground(0)'>  
-      </button>
+      </a>
       <div class="square one"
       [ngStyle]="{'background-color': changeColor[1] ? 'green' : '#DDDCDC'}">
         <a class="square one" (click)='changeBackground(1)' class="my-click"></a>
@@ -95,7 +42,6 @@
       </div>
       <div class="square four"
       [ngStyle]="{'background-color': changeColor[4] ? 'green' : '#DDDCDC'}">
-          <button (onclick)='changeBackground(4)'></button>
       </div>
       <div class="square five"
       [ngStyle]="{'background-color': changeColor[5] ? 'green' : '#DDDCDC'}">
@@ -120,5 +66,3 @@
     </div>
   </div>
 </div>
-
-<button (click)='changeBackground(1)'>teste 02</button>
