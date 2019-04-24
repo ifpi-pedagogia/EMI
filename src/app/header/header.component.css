@@ -5,9 +5,8 @@
     z-index: 1;
     position: absolute;
     clear: both;
-    height: 30vh;
+    height: 7.8vh;
     margin-bottom: 0;
-
 }
 
 .wrapper {
@@ -17,6 +16,10 @@
 
 .menu-button {
     cursor: pointer;
+    border: solid 1px #586165;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 4em;
 }
 
 .icon {
@@ -54,6 +57,7 @@
 .header__nav ul{
     margin: 0;
     padding: 0;
+    
 }
 
 .header__nav li{
