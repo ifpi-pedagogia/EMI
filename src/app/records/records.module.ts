@@ -13,7 +13,16 @@ import { Mural3DetailsComponent } from './mural-outhers/mural3-details/mural3-de
 import { EntrevistaComponent } from './entrevista/entrevista.component';
 
 @NgModule({
-  declarations: [DepositionsComponent, MuralOneComponent, MuralTwoComponent, MuralTreComponent, MuralOuthersComponent, DepositionDetailsComponent, Mural2DetailsComponent, Mural3DetailsComponent, EntrevistaComponent],
+  declarations: [
+    DepositionsComponent,
+    MuralOneComponent,
+    MuralTwoComponent,
+    MuralTreComponent,
+    MuralOuthersComponent,
+    DepositionDetailsComponent,
+    Mural2DetailsComponent,
+    Mural3DetailsComponent,
+    EntrevistaComponent],
   imports: [
     CommonModule,
     RecordsRoutingModule
