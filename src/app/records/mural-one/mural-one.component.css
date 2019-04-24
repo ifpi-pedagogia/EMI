@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.quote-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: whitesmoke;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.student-photo{
+    flex: 1;
+}
+
+.deposition__paragraph{
+    font-size: 16px;
+    color: #586165;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.deposition__name{
+    font-size: 12px;
+    color: #586165;
+    margin-left: 1em;
+}
+
+.deposition__course{
+    font-size: 12px;
+    color: #586165;
+    margin: auto auto 1em 1em;
+}
