@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public menuTypeMobile: boolean;
+
   constructor() { }
 
   ngOnInit() {
-    console.log('OnInit header.compente');
+    this.menuTypeMobile = false;
   }
+
+  public showMenuMobile(): void { this.menuTypeMobile = !this.menuTypeMobile; }
 
 }

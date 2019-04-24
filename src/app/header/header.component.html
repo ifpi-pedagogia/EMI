@@ -1,11 +1,11 @@
 <header class="header">
   <div class="wrapper">
     <a href="" class="logo-text">EMI</a>
-    <button class="menu-button">
+    <button class="menu-button" (click)='showMenuMobile()'>
       <i class="fas fa-bars menu-button__icon"></i>
     </button>
   </div>
-    <nav class="header__nav">
+    <nav class="header__nav" [ngClass]="{'opened' : menuTypeMobile}">
     <ul>
       <li><a [routerLink]="['']"><b>Início</b></a></li>
       <li><a [routerLink]="['records/depositions-in-videos']"><b>Depoimentos</b></a></li>
