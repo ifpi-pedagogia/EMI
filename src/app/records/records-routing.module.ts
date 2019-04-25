@@ -1,3 +1,4 @@
+import { EntrevistaComponent } from './entrevista/entrevista.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'mural-one', component: MuralOneComponent},
   {path: 'mural-outhers', component: MuralOuthersComponent},
   {path: 'depositions-in-videos', component: DepositionsComponent},
+  {path: 'interviews', component: EntrevistaComponent},
   {path: 'deposition/:id', component: DepositionDetailsComponent},
   {path: 'mural-two/:id', component: Mural2DetailsComponent},
   {path: 'mural-tre/:id', component: Mural3DetailsComponent}
