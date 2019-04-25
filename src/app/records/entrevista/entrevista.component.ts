@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-// import { EntrevistaModel } from 'app/shared/entrevista.model.ts';
+import { EntrevistaModel } from './../../shared/entrevista.model';
+import { InterviewService } from '../interview.service';
 
 @Component({
   selector: 'app-entrevista',
@@ -9,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntrevistaComponent implements OnInit {
 
-  constructor() { }
+  interviews: Array<EntrevistaModel>;
+
+  constructor(private servInterview: InterviewService) { }
 
   ngOnInit() {
+    this.interviews = this.servInterview.getInterviews();
   }
 
 }
