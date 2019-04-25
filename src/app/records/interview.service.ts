@@ -8,13 +8,22 @@ import { EntrevistaModel } from './../shared/entrevista.model';
 export class InterviewService {
 
   interviewAll: Array<EntrevistaModel>;
+  questionOne: string;
+  questionTwo: string;
+  questionTre: string;
+  questionFor: string;
 
   constructor() { this.init(); }
 
   private init(): void {
+    this.questionOne = 'O que você diria para um estudante de ensino fundamental (09º ano) que está indeciso quanto a qual tipo de ensino médio realizar: O ensino médio não integrado ou o  ensino médio integrado?';
+    this.questionTwo = 'O que você diria a um aluno que acabou de ingressar no 1º ano do ensino médio integrado e está com muitas dúvidas sobre o curso técnico?';
+    this.questionTre = 'Que contribuições o ensino médio integrado está trazendo para sua formação?';
+    this.questionFor = 'Você arrepende-se de ter optado por realizar o curso técnico integrado no Instituto Federal? Justifique.';
     this.interviewAll = [
       {
         id: 1,
+        urlImg: 'assets/imagens/pessoa1.png',
         studentName: 'José Celso de Matos Silva',
         courseName: 'Eletromecânica',
         sala: 3301,
@@ -27,6 +36,7 @@ export class InterviewService {
         },
           {
           id: 2,
+          urlImg: 'assets/imagens/pessoa2.png',
           studentName: 'João Victor Ferreira dos Santos',
           courseName: 'Eletromecânica',
           sala: 3301,
@@ -39,6 +49,7 @@ export class InterviewService {
           },
           {
           id: 3,
+          urlImg: 'assets/imagens/pessoa3.png',
           studentName: 'Laís de Fátima Vasconcelos dos Santos',
           courseName: 'Edificações',
           sala: 2401,
@@ -51,6 +62,7 @@ export class InterviewService {
           },
           {
           id: 4,
+          urlImg: 'assets/imagens/pessoa4.png',
           studentName: 'Maria Clara Soares de Sousa',
           courseName: 'Edificações',
           sala: 2401,
@@ -63,6 +75,7 @@ export class InterviewService {
           },
           {
           id: 5,
+          urlImg: 'assets/imagens/pessoa5.png',
           studentName: 'Kléber Lucas da Costa Silva',
           courseName: 'Edificações',
           sala: 2401,
