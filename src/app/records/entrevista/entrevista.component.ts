@@ -21,6 +21,9 @@ export class EntrevistaComponent implements OnInit {
     this.questions[1] = this.servInterview.questionTwo;
     this.questions[2] = this.servInterview.questionTre;
     this.questions[3] = this.servInterview.questionFor;
+    console.log(this.questions[3]);
+    console.log('SERVICE--> ' + this.servInterview.questionFor);
+    console.log(this.interviews);
   }
 
 }

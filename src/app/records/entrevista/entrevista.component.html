@@ -5,9 +5,11 @@
   <ul>
     <li class="card" *ngFor="let item of interviews">
       <img [src]="item.urlImg" alt="Avatar">
-      <div class="container">
+      <div>
         <h4><b>Aluno: {{item.studentName}}</b></h4> 
         <p>Curso: {{item.courseName}}</p>
+        <p>{{item.questions[0]}}</p>
+        <!--
         <p><strong>{{questions[0]}}</strong></p>
         <p>{{item.questions[0]}}</p>
         <p><strong>{{questions[1]}}</strong></p>
@@ -16,6 +18,7 @@
         <p>{{item.questions[2]}}</p>
         <p><strong>{{questions[3]}}</strong></p>
         <p>{{item.questions[3]}}</p>
+        -->
       </div>
     </li>
   </ul>
