@@ -1,18 +1,3 @@
-<!-- <div *ngFor='let item of mural' class="container">
-  <section class="people-cards">
-    <article class="people-cards__card">
-      <div class="people-cards__avatar">
-        <img [src]='item.iconPerfil' alt="">
-      </div>
-
-      <div class="people-cards__content">
-        <h2 class="people-cards__title">{{item.student}}</h2>
-        <p class="people-cards__text">{{item.deposition}}</p>
-      </div>
-    </article>
-  </section>
-</div>
--->
 <div *ngFor='let item of mural' class="container">
   <div class="testimonial-quote group">
     <img [src]='item.iconPerfil' alt="">
@@ -29,6 +14,7 @@
         </span>
         <br>
         Curso
+        <span>{{item.courseName}}</span>
       </cite>
     </div>
   </div>
