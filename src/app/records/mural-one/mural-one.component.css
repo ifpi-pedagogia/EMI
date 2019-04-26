@@ -1,7 +1,7 @@
 .wrapper{
     display: flex;
-    flex-direction: row;
-    margin: 1em;
+    flex-direction: column;
+    margin: 1em auto;
 }
 
 .quote-container{
@@ -12,10 +12,15 @@
     background-color: whitesmoke;
     border-radius: 1em;
     overflow: hidden;
+    border: 2px solid transparent;    
 }
 
 .student-photo{
-    flex: 1;
+    align-self: center;
+    margin: 10px auto auto 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
 }
 
 .deposition__paragraph{
@@ -35,4 +40,19 @@
     font-size: 12px;
     color: #586165;
     margin: auto auto 1em 1em;
+}
+
+@media screen and (min-width: 720px) {
+    .quote-container {
+        width: 80%;
+        align-self: center;
+        flex-direction: row;
+    }
+
+    .deposition__wrapper{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
 }
