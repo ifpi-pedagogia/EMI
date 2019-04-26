@@ -1,22 +1,22 @@
-<div *ngFor='let item of mural' class="container">
-  <div class="testimonial-quote group">
-    <img [src]='item.iconPerfil' alt="">
-
+<div *ngFor='let item of mural'>
+  <div class="wrapper">
     <div class="quote-container">
-      <blockquote>
-        <p>
+      <img [src]='item.iconPerfil' alt="" class="student-photo">
+      <blockquote class="deposition">
+        <p class="deposition__paragraph">
           {{item.deposition}}
         </p>
       </blockquote>
+
       <cite>
-        <span>
+        <span class="deposition__name">
           {{item.student}}
         </span>
-        <br>
-        Curso
-        <span>{{item.courseName}}</span>
       </cite>
+
+      <span class="deposition__course">
+        Curso: 
+      </span>
     </div>
   </div>
 </div>
-
