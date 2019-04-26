@@ -3,4 +3,6 @@ export class MuralTwo {
   public nameStudent: string;
   public responseOne: string;
   public responseTwo: string;
+  public urlImg: string;
+  public courseName: string;
 }

@@ -4,4 +4,6 @@ export class MuralTre {
   public responseOne: string;
   public responseTwo: string;
   public responseTre: string;
+  public urlImg: string;
+  public courseName: string;
 }
