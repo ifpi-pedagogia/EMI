@@ -11,6 +11,7 @@ import { DepositionDetailsComponent } from './deposition-details/deposition-deta
 import { Mural2DetailsComponent } from './mural-outhers/mural2-details/mural2-details.component';
 import { Mural3DetailsComponent } from './mural-outhers/mural3-details/mural3-details.component';
 import { EntrevistaComponent } from './entrevista/entrevista.component';
+import { InterviewDetailsComponent } from './interview-details/interview-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EntrevistaComponent } from './entrevista/entrevista.component';
     DepositionDetailsComponent,
     Mural2DetailsComponent,
     Mural3DetailsComponent,
-    EntrevistaComponent],
+    EntrevistaComponent,
+    InterviewDetailsComponent],
   imports: [
     CommonModule,
     RecordsRoutingModule

@@ -1,0 +1,30 @@
+<p>
+  interview-details works!
+</p>
+
+<div class="jumbotron">
+    <div class="container" style='color: white'>
+      <img [src]="interview.urlImg" alt="Foto do aluno">
+      <h5>{{interview.studentName}}</h5>
+      <hr>
+      <div class='my-div-question'>
+        <p>01º) {{questionOne}}</p>
+      </div>
+      <p>{{interview.questions[0]}}</p>
+      <hr>
+      <div class='my-div-question'>
+          <p>02º) {{questionTwo}}</p>
+      </div>
+      <p>{{interview.questions[1]}}</p>
+      <hr>
+      <div class='my-div-question'>
+          <p>{{questionTre}}</p>
+      </div>
+      <p>{{interview.questions[2]}}</p>
+      <hr>
+      <div class='my-div-question'>
+          <p>{{questionFor}}</p>
+      </div>
+      <p>{{interview.questions[3]}}</p>
+    </div>
+  </div>
