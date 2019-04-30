@@ -1,22 +1,22 @@
 .jumbotron { 
-    padding: 30px; /* fills out the jumbotron */
+    padding: 30px;
     background-color: #111;
   }
   
   .container {
-    width: 1170px; /* specify a width */
-    margin: 0 auto;  /* centers the container */
-    padding: 0 15px; /* adds some padding to the left and right*/
+    width: 1170px;
+    margin: 0 auto;  
+    padding: 0 15px; /* adicionar algum preenchimento à esquerda e à direita */
   }
   
   .jumbotron .container { 
-    max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+    max-width: 100%; /* Possibilitando o ajuste do jumbotron em diferentes telas */
     background-color: #222;
     padding-bottom: 10px;
   }
   
   .jumbotron h1 { 
-    text-align: center; /* centers the heading */
+    text-align: center; /* centralizar o título cabeçalho */
     color: #DDD;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-weight: 600;
