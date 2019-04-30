@@ -3,16 +3,17 @@
     <h5>De veteranos para novatos</h5>
   </div>
   <div *ngFor="let item of depositions">
-      <div class="card blue-grey lighten-4" style="background-color: rgb(33, 119, 199); padding: 10px; margin: 10px;">
+      <div class="card my-div">
           <div class="card-content">
-             <p class='center'><strong class='green-text text-darken-4'>{{item.nameStudent}}</strong></p>
+             <img [src]="item.urlImg">
+             <p class='center'><strong>{{item.nameStudent}}</strong></p>
              <p><strong>1){{questionOne}}</strong></p>
              <p><strong>2){{questionTwo}}</strong></p>
           </div>
           <div class='card-action'>
-            <a class="btn-floating btn-large waves-effect waves-light green" [routerLink]="['/records/mural-two/', item.idDeposition]">
-              <i class="material-icons">add</i>
-            </a>
+            <button [routerLink]="['/records/mural-two/', item.idDeposition]">
+              Ler mais
+            </button>
           </div>
         </div>
   </div>
