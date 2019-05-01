@@ -18,9 +18,12 @@
 </div>
 
 <div *ngIf='!perguntar && !result'>
-  <div class='my-barra'>
+  <div class='my-barra' *ngIf='!gameOver'>
     <p>* Click no botão</p>
     <button (click)='changeBackground(unidade)'>Peça {{unidade + 1}}</button>
+  </div>
+  <div class="my-barra" *ngIf="gameOver">
+    <h3>Parabéns, fim de jogo!</h3>
   </div>
   <div class="logo-game">
     <div class="wrapper">

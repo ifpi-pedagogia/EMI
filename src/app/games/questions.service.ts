@@ -101,39 +101,23 @@ export class QuestionsService {
   ];
 
   public auxQuestions: Array<QuestionAlternatives>;
-  public questionsErrors: Array<QuestionAlternatives>;
+  public gameOver: boolean;
   public round: number;
   public score: number;
-  public qtdPecas: number;
-  public pecas: number;
   public responser: string;
-  public control: number;
-  public controlNumQuestions: number;
   public numMaxQuestions: number;
-  public showPeca: boolean;
-  public acertou: boolean;
-  public imagens: [
-    {url: 'assets/imagens/d.jpeg'},
-    {url: 'assets/imagens/s2.jpg'},
-    {url: 'assets/imagens/s3.png'},
-    {url: 'assets/imagens/v.jpeg'}
-  ];
+  public acertou: boolean; // acertou ou não?
 
   constructor() { }
 
   public init() {
    this.auxQuestions = this.myQuestions;
-   this.questionsErrors = [];
    this.round = 0;
    this.score = 0;
    this.responser = undefined;
-   this.qtdPecas = 0;
-   this.pecas = 9;
-   this.control = 0;
-   this.controlNumQuestions = 0;
    this.numMaxQuestions = this.auxQuestions.length;
-   this.showPeca = false;
    this.acertou = false;
+   this.gameOver = false;
   }
 
   public getQuestions(): Array<QuestionAlternatives> {
@@ -161,7 +145,7 @@ export class QuestionsService {
       this.responser = 'Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer;
       this.acertou = false;
     }
-    // this.showPecaPremiun(r);
+    this.gameOver = this.finishGame();
   }
 
   public getAcertou(): boolean {
@@ -169,7 +153,11 @@ export class QuestionsService {
   }
 
   public finishGame(): boolean {
-    if (this.round === this.numMaxQuestions) {
+    /* round é equivalente ao valor de current, que é passado como argumento no método
+     * no playerGame. Current é um índice de vetor, que começa com zero. Para formar uma
+     * comparação válida, irei realizar uma adição na comparação.
+     */
+    if (this.round + 1 >= this.numMaxQuestions) {
       return true;
     }
     return false;
@@ -179,35 +167,5 @@ export class QuestionsService {
     this.score++;
   }
 
-  public quebraCabeca(result: boolean): boolean {
-    this.controlNumQuestions++;
-    if (this.controlNumQuestions === 4) {
-      this.controlNumQuestions = 1;
-      this.control = 0;
-    }
-    if (result) {
-      this.control++;
-      if (this.control >= 2 && this.qtdPecas !== this.pecas - 1) {
-        this.control = 0;
-        return true;
-      } else if (this.control >= 2 && this.qtdPecas === this.pecas) {
-        this.control = 0;
-        return true;
-      }
-    }
-    return false;
-  }
-
-  public showPecaPremiun(r: boolean): void {
-    if (this.quebraCabeca(r)) {
-      this.showPeca = true;
-    } else {
-      this.showPeca = false;
-    }
-  }
-
-  public getImages(): Array<object> {
-    return this.imagens;
-  }
 
 }

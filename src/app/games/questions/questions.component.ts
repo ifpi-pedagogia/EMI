@@ -10,9 +10,8 @@ import { QuestionsService } from './../questions.service';
 })
 export class QuestionsComponent implements OnInit {
 
-  public questions: Array<QuestionAlternatives>;
-  public round: number;
-  public pecaQuebraCaebeca: boolean;
+  public questions: Array<QuestionAlternatives>; // questions
+  public round: number; // rodada
   public changeColor: Array<boolean>;
   public perguntar: boolean;
   public pergunta: string;
@@ -23,6 +22,7 @@ export class QuestionsComponent implements OnInit {
   public current: number;
   public result: boolean;
   public unidade: number;
+  public gameOver: boolean;
 
   constructor(private service: QuestionsService) { }
 
@@ -32,11 +32,11 @@ export class QuestionsComponent implements OnInit {
 
   public init(): void {
     this.service.init();
+    this.gameOver = this.service.gameOver;
     this.unidade = 0;
     this.questions = this.service.getQuestions();
     this.round = 0;
     this.result = false;
-    this.pecaQuebraCaebeca = false;
     this.perguntar = false;
     this.changeColor = [false, false, false, false, false, false, false, false, false, false];
   }
@@ -52,6 +52,9 @@ export class QuestionsComponent implements OnInit {
     }
     this.resposta = this.service.responser;
     this.showResult();
+    this.gameOver = this.service.gameOver;
+    console.log('game: ' + this.gameOver);
+    console.log(current);
   }
 
   private setAlternatives(current: number): void {
@@ -92,6 +95,8 @@ export class QuestionsComponent implements OnInit {
     }
     this.resposta = this.service.responser;
     this.showResult();
+    this.gameOver = this.service.gameOver;
+
   }
 
 }
