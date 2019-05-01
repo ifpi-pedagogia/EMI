@@ -61,6 +61,42 @@ export class QuestionsService {
         'Oferecer auxílio financeiro a todos os estudantes do ensino médio integrado, bastando para isso o aluno apresentar a carteirinha do estudante ao setor de serviço social',
         'Contribuir com ações de atendimento às necessidades básicas e de incentivo á formação acadêmica, visando o desenvolvimento integral dos estudantes.'
       ]
+    },
+    {
+      question: 'Através do programa de atendimento ao estudante com vulnerabilidade social  o aluno poderá receber um benefício financeiro. Para tanto:',
+      rightAnswer: 'É necessário que o estudante atenda a critérios estabelecidos em edital que comprovem a situação de vulnerabilidade social.',
+      alternatives: [
+        'É preciso apenas estar matriculado em  dos cursos técnicos integrados ao Ensino Médio.',
+        'É necessário que o estudante tenha cursado o ensino fundamental em escola pública.',
+        'É necessário que o estudante atenda a critérios estabelecidos em edital que comprovem a situação de vulnerabilidade social.'
+      ]
+    },
+    {
+      question: 'Os Institutos Federais são instituições de educação especializados na oferta de educação profissional e tecnológica nas diferentes modalidades de ensino e tem o compromisso  de desenvolvimento humano integral do estudante, que significa:',
+      rightAnswer: 'Uma formação cidadã que leve em consideração várias dimensões da vida, ex: técnica, científica, cultural e intelectual.',
+      alternatives: [
+        'Uma formação cidadã que leve em consideração várias dimensões da vida, ex: técnica, científica, cultural e intelectual.',
+        'Uma formação no aspecto estritamente técnico.',
+        'Uma  formação específica para o estudante que fará ENEM.'
+      ]
+    },
+    {
+      question: 'Os cursos Integrados, no campus Floriano, tem duração de 4 (quatro) anos porque:',
+      rightAnswer: 'A carga horária do ensino médio integrado é maior e por isso planejada para ser desenvolvida em quatro anos',
+      alternatives: [
+        'A carga horária do ensino médio integrado é maior e por isso planejada para ser desenvolvida em quatro anos',
+        'Necessita de 1 (um) a mais para realização do estágio obrigatório do curso;',
+        'Porque este é o tempo mínimo exigido.'
+      ]
+    },
+    {
+      question: 'Um dos aspectos essenciais da formação integrada é:',
+      rightAnswer: 'A articulação entre as atividades de ensino, pesquisa e extensão.',
+      alternatives: [
+        'Atividades voltadas exclusivamente para a aprendizagem de conteúdos através do ensino.',
+        'A articulação entre as atividades de ensino, pesquisa e extensão.',
+        'Aumento na carga horária com o objetivo de manter os estudantes ocupados por maior tempo na escola.'
+      ]
     }
   ];
 
