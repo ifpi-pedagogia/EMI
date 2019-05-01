@@ -1,14 +1,14 @@
-<div class='container emi-space'>
-    <div class="row">
-        <div class="col l5 push-l1 m3 push-m1 s12">
-          <img [src]='imgGame' class="responsive-img">
-        </div>
+<div style='background-color: turquoise'>
+    <h3 style='color: white'>Mito ou verdade? Responda</h3>
+</div>
+<div class='container'>
+    <div class="box">
         <!-- Caixa com a pergunta da rodada-->
-        <div *ngIf='displayQuestion' class="col l6 offset-l1 m8 offset-m1 s12">
+        <div *ngIf='displayQuestion' class='my-center'>
           <p style="text-align: justify;">{{questions[round].question}}</p>
           <hr>
-          <button class="emiBtn" (click)='verifyResponse(false)'>  MITO  </button>
-          <button class=emiBtn (click)='verifyResponse(true)'> VERDADE </button>
+          <img src="assets/imagens/true.png" alt='Click para verdaeiro' (click)='verifyResponse(true)' class='my-img'>
+          <img src='assets/imagens/remove-icon.png' alt='Click para mito' (click)='verifyResponse(false)' class='my-img'>
         </div>
         <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
         <div *ngIf="displayResult">

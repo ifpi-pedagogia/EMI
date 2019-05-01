@@ -1,0 +1,31 @@
+.my-img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: 4px;
+}
+
+.my-space {
+    width: 80%;
+}
+
+.my-center {
+    text-align: center;
+    align-content: center;
+}
+
+.my-row {align-content: center}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+    }
+
+.box {
+    width: 80%;
+    height: auto;
+    }
