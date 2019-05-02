@@ -3,7 +3,7 @@
     background-color: #111;
   }
   
-  .container {
+  .my-container {
     width: 1170px;
     margin: 0 auto;  
     padding: 0 15px; /* adicionar algum preenchimento à esquerda e à direita */
