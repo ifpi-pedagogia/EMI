@@ -7,3 +7,36 @@ body{
 img{
     max-width: 100%;
 }
+
+.my-img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    margin: 4px;
+}
+
+.my-center {
+    text-align: center;
+    align-content: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+    }
+
+.box {
+    width: 80%;
+    height: auto;
+    }
+    .my-barra {
+        background-color: #63c6ae; 
+        color: black; 
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }

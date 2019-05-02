@@ -7,6 +7,7 @@ import { QuestionAlternatives } from '../shared/questions-alternatives.model';
 })
 export class QuestionsService {
 
+  // banco de dados 'mocado', no futuro isso será provido por uma API
   public myQuestions: Array<QuestionAlternatives> = [
     {
       question: 'No Instituto Federal há três tipos de cursos de nível médio',
