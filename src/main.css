@@ -40,3 +40,8 @@ img{
         margin-top: 10px;
         text-align: center;
     }
+
+    .my-border {
+        padding: 10px;
+        border: 2px solid #63c6ae;
+    }
