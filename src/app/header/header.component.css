@@ -93,7 +93,7 @@
     }
 
     .logo-text{
-        width: 15%;
+        min-width: 100px;
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -108,7 +108,7 @@
     }
 
     .header__nav{
-        width: 55%;
+        width: 80;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -134,5 +134,9 @@
 @media screen and (min-width: 1280px) {
     .header{
         justify-content: space-between;
+    }
+
+    .header__nav{
+        margin-right: 10rem;
     }
 }
