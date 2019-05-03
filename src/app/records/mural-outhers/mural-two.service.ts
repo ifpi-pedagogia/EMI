@@ -17,7 +17,7 @@ export class MuralTwoService {
       nameStudent: 'Vanessa de Sousa Rodrigues',
       responseOne: 'Porque aqui contamos com um quadro excelente de professores, com um acervo super completo de livros didáticos e paradidáticos. O instituto campus Floriano apresenta uma das melhores estruturas de escolas públicas do Estado. A qualidade do ensino é excelente. Aqui temos ônibus grátis, refeitório. Temos variadas bolsas para ajudar, setor pedagógico, médico etc.',
       responseTwo: 'De acordo com cada curso, você aprende muitas coisas. Temos acesso a laboratórios para um melhor desenvolvimento de atividades quando relacionada a cada área. Como se não bastasse tudo isso, o IFPI nos proporciona muitas amizades, pessoas acolhedoras. Aqui aprendemos de fato a ser pessoas melhores, sem dúvidas.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Informática'
     },
     {
@@ -33,7 +33,7 @@ export class MuralTwoService {
       nameStudent: 'Kassia Cristina',
       responseOne: 'Ele nos oferece uma ótima estrutura que nos acolhe, tornando-se nossa segunda casa. O instituto proporciona nos desenvolvermos como pessoa e nos oferece várias oportunidades.',
       responseTwo: 'A ser bons profissionais, a ser pessoas melhores. Os professores nos passam experiências e ensinamentos que vão além do conteúdo da matéria.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Informática'
     },
     {
@@ -41,7 +41,7 @@ export class MuralTwoService {
       nameStudent: 'Emanuela de Jesus',
       responseOne: 'É 10 porque a estrutura é uma das melhores, temos o melhor acervo de livros de floriano, professores bons que nos ensinam bem. Temos muitas oportunidades estudando aqui e quando saírmos daqui teremos novas oportunidades.',
       responseTwo: 'Como falar melhor em seminários, aprender a trabalhar em equipe, ter mais responsabilidade para entregar trabalhos, fazer trabalhos, aprender a respeitar as diferenças das pessoas, aprender novas informações.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Informática'
     },
     {
@@ -49,7 +49,7 @@ export class MuralTwoService {
       nameStudent: 'Maria Eduarda Tomaz',
       responseOne: 'É composto por ótimos professores, vários ambientes da escola que nos estimulam a estudar e também por funcionários que nos tratam muito bem.',
       responseTwo: 'Também aprendemos muito com o curso que escolhemos, adquirimos conhecimentos diferentes do que somos acostumados.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Não informado'
     },
     {
@@ -57,7 +57,7 @@ export class MuralTwoService {
       nameStudent: 'Geovana Araújo Ferreira',
       responseOne: 'É uma escola onde você encontra várias oportunidades, possui acesso a um estudo de qualidade com professores adequados, além de profissionais e servidores em geral altamente atenciosos. Possuem asistência especializada em vários setores como saúde, alimentação. Biblioteca com acervo grande e variado. Casa da leitura com livros interessantes e de acesso facilitado. A biblioteca, ainda, apresenta o melhor material quando comparada à cidade.',
       responseTwo: 'A sermos mais humanos e compreensíveis. Termos uma visão melhor do mundo.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Informática'
     },
     {

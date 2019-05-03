@@ -1,17 +1,21 @@
 <div>
-  <div class='my-barra'>
-    <h2>De veteranos para novatos</h2>
-  </div>
   <div *ngFor="let item of depositions">
-      <div class="card my-div my-border">
-          <div class="card-content">
+      <div class='my-barra'>
+          <h2>De veteranos para novatos</h2>
+        </div>
+      <div class="my-div my-border my-grid-container">
+          <div>
              <img [src]="item.urlImg" style='align-content: center'>
-             <p><strong>{{item.nameStudent}}, completa:</strong></p>
-             <p><strong>01º) {{questionOne}}</strong></p>
-             <p><strong>02º) {{questionTwo}}</strong></p>
           </div>
-          <div class='card-action'>
-            <button [routerLink]="['/records/mural-two/', item.idDeposition]">
+          <div>
+            <p>Aluno(a):</p>
+            <p class='my-border-coponent-dicas'><strong>{{item.nameStudent}}</strong></p>
+            <p>Irá completar:</p>
+            <div class='my-border-coponent-dicas'>
+                <p><strong>01º) {{questionOne}}</strong></p>
+                <p><strong>02º) {{questionTwo}}</strong></p>
+            </div>
+            <button [routerLink]="['/records/mural-two/', item.idDeposition]" class='my-button' style='float: right;'>
               Visualizar
             </button>
           </div>
