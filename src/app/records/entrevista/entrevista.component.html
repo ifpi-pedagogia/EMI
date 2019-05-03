@@ -1,24 +1,20 @@
-<p>
-  entrevista works!
-</p>
 <div class='card-container'>
   <ul>
-    <li class="card" *ngFor="let item of interviews">
-      <img [src]="item.urlImg" alt="Avatar">
+    <li class="my-grid-container my-border" style='margin-bottom: 4px;' *ngFor="let item of interviews">
       <div>
-        <h4><b>Aluno: {{item.studentName}}</b></h4> 
-        <p>Curso: {{item.courseName}}</p>
-        <!--
-        <p><strong>{{questionOne}}</strong></p>
-        <p>{{item.questions[0]}}</p>
-        <p><strong>{{questionTwo}}</strong></p>
-        <p>{{item.questions[1]}}</p>
-        <p><strong>{{questionTre}}</strong></p>
-        <p>{{item.questions[2]}}</p>
-        <p><strong>{{questionFor}}</strong></p>
-        <p>{{item.questions[3]}}</p> -->
+          <img [src]="item.urlImg" alt="Avatar">
       </div>
-      <button [routerLink]="['/records/interviews', item.id]">Visualizar</button>
+      <div>
+        <p>Aluno(a):</p> 
+        <p class='my-border-card'>{{item.studentName}}</p>
+        <p>Outros dados:</p>
+        <div class='my-border-card'>
+            <p>Curso: {{item.courseName}}</p>
+            <p>Sala: {{item.sala}}</p>
+        </div>
+        <button class='my-button' [routerLink]="['/records/interviews', item.id]">Visualizar</button>
+      </div>
+      
     </li>
   </ul>
 </div>

@@ -16,7 +16,7 @@ export class InterviewService {
     this.interviewAll = [
       {
         id: 1,
-        urlImg: 'assets/imagens/pessoa1.png',
+        urlImg: 'assets/imagens/pessoa2.png',
         studentName: 'José Celso de Matos Silva',
         courseName: 'Eletromecânica',
         sala: 3301,
@@ -42,7 +42,7 @@ export class InterviewService {
           },
           {
           id: 3,
-          urlImg: 'assets/imagens/pessoa3.png',
+          urlImg: 'assets/imagens/pessoa5.png',
           studentName: 'Laís de Fátima Vasconcelos dos Santos',
           courseName: 'Edificações',
           sala: 2401,
@@ -55,7 +55,7 @@ export class InterviewService {
           },
           {
           id: 4,
-          urlImg: 'assets/imagens/pessoa4.png',
+          urlImg: 'assets/imagens/pessoa5.png',
           studentName: 'Maria Clara Soares de Sousa',
           courseName: 'Edificações',
           sala: 2401,
@@ -68,7 +68,7 @@ export class InterviewService {
           },
           {
           id: 5,
-          urlImg: 'assets/imagens/pessoa5.png',
+          urlImg: 'assets/imagens/pessoa2.png',
           studentName: 'Kléber Lucas da Costa Silva',
           courseName: 'Edificações',
           sala: 2401,
