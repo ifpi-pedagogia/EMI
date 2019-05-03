@@ -45,3 +45,12 @@ img{
         padding: 10px;
         border: 2px solid #63c6ae;
     }
+
+    .my-button {
+        margin: 2px;
+    }
+
+    .my-grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%; 
+    }
