@@ -43,6 +43,7 @@ article{
     margin-right: auto;
     width: 80%;
     display: flex;
+    flex-direction: row;
 }
 
 .hero{
@@ -128,13 +129,21 @@ article{
     align-items: center;
 }
 
+.section6__img{
+    width: 200px;
+    height: 200px;
+}
+
 .box{
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .box h1{
-    flex: 2;
+    flex: 1;
+    margin: 0;
+    padding-bottom: 2em;
 }
 
 .box img{
@@ -163,4 +172,25 @@ article{
 .section-7__box{
     display: flex;
     align-items: center;
+}
+
+
+@media screen and (max-width: 800px){
+
+    .hero, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7{
+        height: auto;
+        box-sizing: border-box;
+    }
+
+   .article-intro{
+       padding: 1em;
+   }
+
+   .container{
+       flex-direction: column;
+   }
+
+   img{
+       display: none;
+   }
 }
