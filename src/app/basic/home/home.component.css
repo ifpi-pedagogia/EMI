@@ -38,6 +38,10 @@ article{
     display: block;
 }
 
+.hero, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7{
+    box-sizing: border-box;
+}
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -176,11 +180,6 @@ article{
 
 
 @media screen and (max-width: 800px){
-
-    .hero, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7{
-        height: auto;
-        box-sizing: border-box;
-    }
 
    .article-intro{
        padding: 1em;
