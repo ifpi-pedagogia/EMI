@@ -118,7 +118,7 @@ export class TrueOrFalseService {
     {
       question: 'A Instituição oferece Biblioteca com acesso tanto para alunos matriculados como para estudantes de outras instituições.',
       rightAnswer: true,
-      justification: 'Todos os alunos matriculados no Instituto e de outras instituições de ensino podem utilizar os serviços da biblioteca para estudos, pesquisas etc. A biblioteca possui sala para estudo em grupo, computadores para pesquisas e acervo variado de livros.'
+      justification: 'Todos os alunos matriculados no Instituto e de outras instituições de ensino podem utilizar os serviços da biblioteca para estudos, pesquisas etc. A biblioteca possui sala para estudo em grupo, computadores para pesquisas e acervo variado de livros.'
     },
 
     {
@@ -132,6 +132,9 @@ export class TrueOrFalseService {
 
   constructor() { }
 
+  /* english: selects one of the 04 json objects and assigns the variable bdQuestions
+   * Português: seleciona um dos 04 objetos json e atribui a variável bdQuestions
+   */ 
   public setQuestions(idArray: number): void {
     if (idArray === 1) {
       this.bdQuestions = this.questionsOne;
@@ -143,7 +146,9 @@ export class TrueOrFalseService {
       this.bdQuestions = this.questionsFor;
     }
   }
-
+  /* english: returns an object with the questions and answers of the current round
+   * português: retorna um objeto com às perguntas e respostas da rodada atual
+   */
   public getQuestions(): Array<QuestionTrueOrFalse> {
     return this.bdQuestions;
   }

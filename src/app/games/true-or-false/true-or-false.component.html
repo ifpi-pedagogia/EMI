@@ -7,8 +7,8 @@
         <div *ngIf='displayQuestion' class='my-center'>
           <p style="text-align: justify;">{{questions[round].question}}</p>
           <hr>
-          <img src="assets/imagens/true.png" alt='Click para verdaeiro' (click)='verifyResponse(true)' class='my-img'>
-          <img src='assets/imagens/remove-icon.png' alt='Click para mito' (click)='verifyResponse(false)' class='my-img'>
+          <img [src]='image.imgTrue' alt='Click para responder verdade' (click)='verifyResponse(true)' class='my-img'>
+          <img [src]='image.imgFalse' alt='Click para responder mito' (click)='verifyResponse(false)' class='my-img'>
         </div>
         <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
         <div *ngIf="displayResult">
@@ -24,7 +24,7 @@
             </ol>
             <hr class="my-4">
             <button class='emi-btn' [routerLink]="['/games/quiz']">Cancelar</button>
-            <button class='emi-btn' (click)='restart()'>Próxima rodada</button>
+            <button class='emi-btn' (click)='auxInitOrStart()'>Próxima rodada</button>
         </div>
     </div>
 </div>

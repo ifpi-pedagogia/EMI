@@ -23,9 +23,9 @@ export class TrueOrFalseComponent implements OnInit {
   public ranking: string; // foi bom, razoável, ruim, ótimo.
   public numMaxQuestion: number; // limite de questões.
   public arraySorteado = 0;
-  public imgGame: string;
   public displayResult: boolean; // exibir ou não div com 'as respostas'?
   public displayQuestion: boolean; // exibir ou não as perguntas?
+  public image = {imgTrue: 'assets/imagens/true.png', imgFalse: 'assets/imagens/remove-icon.png'};
 
   constructor(private service: TrueOrFalseService) { }
 
@@ -35,7 +35,6 @@ export class TrueOrFalseComponent implements OnInit {
 
   public init(): void {
     this.auxInitOrStart();
-    // this.sorteio();
     this.auxQuestions = this.service.getQuestions();
   }
 
@@ -49,10 +48,10 @@ export class TrueOrFalseComponent implements OnInit {
     }
     // lógica sorteio
     this.service.setQuestions(this.arraySorteado);
+    console.log('Rodada: ' + this.arraySorteado);
   }
 
   public auxInitOrStart(): void {
-    this.imgGame = 'assets/imagens/mito_verdade.png';
     this.sorteio();
     this.questions = this.service.getQuestions();
     this.round = 0;
@@ -73,7 +72,6 @@ export class TrueOrFalseComponent implements OnInit {
       this.score++;
     } else {
       this.resultMensseger = 'Tente novamente: ';
-      this.setErrors(this.questions[this.round]);
     }
     // controle de exibição das 'caixas' de perguntas e respostas
     this.alterDisplays();
@@ -120,21 +118,6 @@ export class TrueOrFalseComponent implements OnInit {
 
   public setClassification(): void {
     this.ranking = this.service.getClassification(this.perfomance);
-  }
-
-  public setErrors(question: QuestionTrueOrFalse): void {
-    this.questionsErrors.push(question);
-  }
-
-  public restart(): void {
-    if (this.perfomance < 90) {
-      this.questions = this.questionsErrors;
-    } else {
-      // this.questions = this.auxQuestions;
-      this.sorteio();
-    }
-    this.auxInitOrStart();
-
   }
 
   // controlar exibição da div de resultados (acertou ou + justificativa)
