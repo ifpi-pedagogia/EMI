@@ -9,7 +9,7 @@ export class QuestionsService {
 
   // banco de dados 'mocado', no futuro isso será provido por uma API
   public myQuestionsOne: Array<QuestionAlternatives>;
-  public myQuestionTwo: Array<QuestionAlternatives>;
+  public myQuestionsTwo: Array<QuestionAlternatives>;
   public auxQuestions: Array<QuestionAlternatives>;
   public gameOver: boolean;
   public round: number;
@@ -17,11 +17,14 @@ export class QuestionsService {
   public responser: string;
   public numMaxQuestions: number;
   public acertou: boolean; // acertou ou não?
+  public roundOne = true;
 
   constructor() { }
 
   public init() {
-   this.auxQuestions = this.myQuestionsOne;
+   this.insert();
+   console.log('Valor de round ' + this.roundOne);
+   this.alterDataBase();
    this.round = 0;
    this.score = 0;
    this.responser = undefined;
@@ -52,7 +55,7 @@ export class QuestionsService {
       this.responser = 'Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer;
       this.acertou = true;
     } else {
-      this.responser = 'Tente Novamente. Resposta correta: ' + this.auxQuestions[current].rightAnswer;
+      this.responser = 'Tente Novamente. Resposta correta: ';
       this.acertou = false;
     }
     this.gameOver = this.finishGame();
@@ -77,6 +80,17 @@ export class QuestionsService {
     this.score++;
   }
 
+  public alterDataBase(): void {
+    if (this.roundOne) {
+      this.auxQuestions = this.myQuestionsOne;
+      this.roundOne = false;
+    } else {
+      this.auxQuestions = this.myQuestionsTwo;
+      this.roundOne = true;
+    }
+  }
+
+  // povoamento do banco de dados de questões
   private insert(): void {
     this.myQuestionsOne = [
       {
@@ -171,7 +185,7 @@ export class QuestionsService {
       }
     ];
 
-    this.myQuestionTwo = [
+    this.myQuestionsTwo = [
       {
         question: 'A extensão faz parte da formação integrada. Extensão significa.',
         rightAnswer: 'A aplicação do conhecimento, obtido nas fases de ensino e pesquisa, para solução de problemas sociais e atendimento às necessidades da comunidade.',

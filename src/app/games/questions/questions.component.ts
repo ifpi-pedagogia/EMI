@@ -32,9 +32,13 @@ export class QuestionsComponent implements OnInit {
 
   public init(): void {
     this.service.init();
-    this.gameOver = this.service.gameOver;
-    this.unidade = 0;
+    this.restart();
+  }
+
+  private restart(): void {
     this.questions = this.service.getQuestions();
+    this.gameOver = false;
+    this.unidade = 0;
     this.round = 0;
     this.result = false;
     this.perguntar = false;
@@ -53,8 +57,12 @@ export class QuestionsComponent implements OnInit {
     this.resposta = this.service.responser;
     this.showResult();
     this.gameOver = this.service.gameOver;
-    console.log('game: ' + this.gameOver);
-    console.log(current);
+  }
+
+  public resetQuestions(): void {
+    if (this.gameOver) {
+      this.restart();
+    }
   }
 
   private setAlternatives(current: number): void {
