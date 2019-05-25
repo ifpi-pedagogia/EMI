@@ -71,7 +71,7 @@ export class QuestionsComponent implements OnInit {
       this.perguntar = !this.perguntar;
     } else {
       // emita uma mensagem para o usuário (óbvio que não será à próxima linha)
-      console.log('Bloqueado!');
+      alert('Caro aluno, você já respondeu corretamente a pergunta desse item.');
     }
   }
 
