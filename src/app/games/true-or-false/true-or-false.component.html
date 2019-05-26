@@ -26,18 +26,19 @@
     <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
     <div *ngIf="displayResult">
       <p>{{showMensseger()}}</p>
-      <button (click)="incrementRound()">OKAY</button>
+      <div (click)="incrementRound()" class="next-button">Próximo</div>
     </div>
     <!-- Fim de jogo e resultados gerais (aproveitamento) etc -->
     <div *ngIf='finishGame'>
-      <h4>Fim de jogo!</h4>
-      <ol>
-        <li>Número de acertos: {{ score }}</li>
-        <li>Desempenho: {{ perfomance | number: '2.1-1' }}%</li>
-      </ol>
-      <hr>a
-      <button [routerLink]="['/games/quiz']">Cancelar</button>
-      <button (click)='auxInitOrStart()'>Próxima rodada</button>
+      <h1>Fim de jogo!</h1>
+      <div class="next-button">
+        <h1 class="text-center">Número de acertos: {{ score }}</h1>
+        <h1 class="text-center">Desempenho: {{ perfomance | number: '2.1-1' }}%</h1>
+      </div>
+      <div class="next-button">
+        <button [routerLink]="['/games/quiz']">Cancelar</button>
+        <button (click)='auxInitOrStart()'>Próxima rodada</button>
+      </div>
     </div>
   </div>
 </div>
