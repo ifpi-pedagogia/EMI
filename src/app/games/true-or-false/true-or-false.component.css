@@ -1,10 +1,62 @@
-.my-space {
-    width: 80%;
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
 }
 
-.my-center {
-    text-align: center;
-    align-content: center;
+h1 {
+  font-size: 32px;
+  color: #888888;
+  text-align: center;
 }
 
-.my-row {align-content: center}
+p {
+  font-size: 20px;
+  color: #555555;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  margin: 25%;
+}
+
+.true-button:hover,
+.false-button:hover {
+  cursor: pointer;
+}
+
+.true-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #63c6ae;
+}
+
+.true-button h1 {
+  color: white;
+}
+
+.false-button {
+  flex: 1;
+  box-sizing: border-box;
+  border: 3px solid #63c6ae;
+}
