@@ -1,30 +1,48 @@
-.jumbotron { 
-    padding: 30px;
-    background-color: #111;
-  }
-  
-  .my-container {
-    width: 1170px;
-    margin: 0 auto;  
-    padding: 0 15px; /* adicionar algum preenchimento à esquerda e à direita */
-  }
-  
-  .jumbotron .container { 
-    max-width: 100%; /* Possibilitando o ajuste do jumbotron em diferentes telas */
-    background-color: #222;
-    padding-bottom: 10px;
-  }
-  
-  .jumbotron h1 { 
-    text-align: center; /* centralizar o título cabeçalho */
-    color: #DDD;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
 
-  .my-div-question {
-    background-color: #63c6ae;
-    padding: 10px;
-    color: #222;
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  color: #888888;
+}
+
+h2 {
+  font-size: 22px;
+  color: #555555;
+}
+
+h3 {
+  font-size: 18px;
+  color: #555555;
+}
+
+h4 {
+  font-size: 16px;
+  color: #555555;
+}
+
+p {
+  font-size: 20px;
+  color: #555555;
+}
+
+img {
+  max-width: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
