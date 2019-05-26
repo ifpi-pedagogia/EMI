@@ -136,9 +136,13 @@ article {
 }
 
 .section-6 {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   align-items: center;
+}
+
+.section-6 h1{
+  font-size: 22px;
 }
 
 .section6__img {
@@ -193,6 +197,7 @@ article {
 
   .container {
     flex-direction: column;
+    padding: 10%;
   }
 
   img {
