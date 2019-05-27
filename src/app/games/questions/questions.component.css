@@ -1,89 +1,94 @@
-.logo-game{
-    width: 100%;
-    
-    z-index: -1;
-    position: relative;
+.logo-game {
+  width: 100%;
+
+  z-index: -1;
+  position: relative;
 }
 
-.wrapper{
-    margin-top: 80px;
-    width: 20%;
-    margin-left: 15px;
-    margin-right: auto;
-    margin-bottom: 40px;
+.wrapper {
+  margin-top: 80px;
+  width: 20%;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-bottom: 40px;
 
-   
-    grid-gap: 5px;
-    display: grid;
+  grid-gap: 5px;
+  display: grid;
 
-    
-
-    grid-template-columns: repeat(3, minmax(80px, 100px));
-    grid-template-rows: repeat(4, minmax(80px, 100px));
-    grid-template-areas: 
+  grid-template-columns: repeat(3, minmax(80px, 100px));
+  grid-template-rows: repeat(4, minmax(80px, 100px));
+  grid-template-areas:
     "zero one two"
     "three four   ."
     "five   six  seven"
-    "eight   nine       ."
+    "eight   nine       .";
 }
 
-.circle{
-    /* display: flex !important; */
-    /* display: block !important; */
-    border-radius: 50%;
-    background-color:#DDDCDC;
-    grid-area: zero;
+button{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: rgb(99, 198, 174);
+    background-color: white;
+    border-radius: 5px;
 }
 
-.square{
-    /* display: flex !important; 
+.circle {
+  /* display: flex !important; */
+  /* display: block !important; */
+  border-radius: 50%;
+  background-color: #dddcdc;
+  grid-area: zero;
+}
+
+.square {
+  /* display: flex !important; 
     display: block !important; */
-    border-radius: 10%;
-    background-color:#DDDCDC;
+  border-radius: 10%;
+  background-color: #dddcdc;
 }
 
-.one{
-    grid-area: one;
+.one {
+  grid-area: one;
 }
 
-.two{
-    grid-area: two;
+.two {
+  grid-area: two;
 }
 
-.three{
-    grid-area: three;
+.three {
+  grid-area: three;
 }
 
-.four{
-    grid-area: four;
+.four {
+  grid-area: four;
 }
 
-.five{
-    grid-area: five;
+.five {
+  grid-area: five;
 }
 
-.six{
-    grid-area: six;
+.six {
+  grid-area: six;
 }
 
-.seven{
-    grid-area: seven;
+.seven {
+  grid-area: seven;
 }
 
-.eight{
-    grid-area: eight;
+.eight {
+  grid-area: eight;
 }
 
-.nine{
-    grid-area: nine;
+.nine {
+  grid-area: nine;
 }
 
 .my-barra {
-    background-color: rgb( 99, 198, 174);
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
+  background-color: rgb(99, 198, 174);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /*
