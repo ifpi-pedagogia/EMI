@@ -55,7 +55,7 @@ export class QuestionsService {
       this.responser = 'Parabéns, você ganhou uma peça! Resposta correta: ' + this.auxQuestions[current].rightAnswer;
       this.acertou = true;
     } else {
-      this.responser = 'Tente Novamente. Resposta correta: ';
+      this.responser = 'Tente Novamente.';
       this.acertou = false;
     }
     this.gameOver = this.finishGame();
