@@ -1,0 +1,8 @@
+.intro__img{
+    float: left;
+}
+
+.my-border{
+    box-sizing: border-box;
+    overflow: hidden;
+}
