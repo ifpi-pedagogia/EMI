@@ -12,8 +12,7 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    SafePipe
+    FooterComponent
   ],
   imports: [
     BrowserModule,
