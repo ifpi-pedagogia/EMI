@@ -15,13 +15,15 @@ export class DepositionsService {
       urlImg: /* 'assets/imagens/depoimento1.jpeg', */ '',
       course: ''
     },
+    /*
     {
       id: 2,
       url: '',
       author: 'Ana Luisa',
-      urlImg: /* 'assets/imagens/depoimento2.jpeg', */ '',
+      urlImg: /* 'assets/imagens/depoimento2.jpeg',  '',
       course: ''
     },
+    */
     {
       id: 3,
       url: 'https://www.youtube.com/embed/GWJYuwnCPss',
@@ -38,7 +40,7 @@ export class DepositionsService {
     },
     {
       id: 5,
-      url: 'www.youtube.com/embed/mCbY55edrnQ',
+      url: 'https://www.youtube.com/embed/mCbY55edrnQ',
       author: 'Camila Oliveira',
       urlImg: /* 'assets/imagens/depoimento5.jpeg', */ '',
       course: ''
@@ -78,6 +80,7 @@ export class DepositionsService {
       urlImg: '',
       course: ''
     },
+    /*
     {
       id: 11,
       url: '',
@@ -85,6 +88,7 @@ export class DepositionsService {
       urlImg: '',
       course: ''
     },
+    */
     {
       id: 12,
       url: 'https://www.youtube.com/embed/u3bX-76FGRE',
@@ -94,14 +98,14 @@ export class DepositionsService {
     },
     {
       id: 13,
-      url: '',
+      url: 'https://www.youtube.com/embed/Ckvcr9SZho8',
       author: 'Marlon',
       urlImg: '',
       course: ''
     },
     {
       id: 14,
-      url: '',
+      url: 'https://www.youtube.com/embed/ibJioLkeUSM',
       author: 'Marlon',
       urlImg: '',
       course: ''
