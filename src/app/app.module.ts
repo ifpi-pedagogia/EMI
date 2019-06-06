@@ -13,7 +13,6 @@ import { environment } from '../environments/environment';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SafePipe
   ],
   imports: [
     BrowserModule,
