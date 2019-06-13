@@ -13,7 +13,7 @@ export class DepositionsService {
       url: 'https://www.youtube.com/embed/myM4kuB3ke8',
       author: 'Ana Bel e Rafael',
       urlImg: /* 'assets/imagens/depoimento1.jpeg', */ '',
-      course: ''
+      course: 'Informática'
     },
     /*
     {
@@ -36,42 +36,42 @@ export class DepositionsService {
       url: 'https://www.youtube.com/embed/vtHoOjxLSyk',
       author: 'Beatriz',
       urlImg: /* 'assets/imagens/depoimento4.jpeg', */ '',
-      course: ''
+      course: 'Meio Ambiente'
     },
     {
       id: 5,
       url: 'https://www.youtube.com/embed/mCbY55edrnQ',
       author: 'Camila Oliveira',
-      urlImg: /* 'assets/imagens/depoimento5.jpeg', */ '',
-      course: ''
+      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-03_at_14-32-07-jpeg',
+      course: 'Meio Ambiente'
     },
     {
       id: 6,
       url: 'https://www.youtube.com/embed/1GbyUfzVBoI',
-      author: 'Elias',
-      urlImg: /* 'assets/imagens/depoimento6.jpeg', */ '',
-      course: ''
+      author: 'Elias Júnior',
+      urlImg: /* 'assets/imagens/depoimento6.jpeg', */ 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-03_at_13-48-12-jpeg',
+      course: 'Eletromecânica'
     },
     {
       id: 7,
       url: 'https://www.youtube.com/embed/TIgtY2FGmos',
-      author: 'Juliano',
+      author: 'Juliano Correia',
       urlImg: /* 'assets/imagens/depoimento7.jpeg', */ '',
-      course: ''
+      course: 'Meio Ambiente'
     },
     {
       id: 8,
       url: 'https://www.youtube.com/embed/06ne77ifibw',
       author: 'Maria Catyane',
-      urlImg: '', /* 'assets/imagens/depoimento8.jpeg', */
-      course: ''
+      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-14_at_15-16-33-jpeg', /* 'assets/imagens/depoimento8.jpeg', */
+      course: 'Meio Ambiente'
     },
     {
       id: 9,
       url: 'https://www.youtube.com/embed/Q7imw3bvImc',
       author: 'Maria Catyane',
-      urlImg: '', /* 'assets/imagens/depoimento9.jpeg', */
-      course: ''
+      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-14_at_15-16-33-jpeg', /* 'assets/imagens/depoimento9.jpeg', */
+      course: 'Meio Ambiente'
     },
     {
       id: 10,
@@ -92,7 +92,7 @@ export class DepositionsService {
     {
       id: 12,
       url: 'https://www.youtube.com/embed/u3bX-76FGRE',
-      author: 'Tiago',
+      author: 'Thiago Kewin',
       urlImg: '',
       course: ''
     },
@@ -100,14 +100,14 @@ export class DepositionsService {
       id: 13,
       url: 'https://www.youtube.com/embed/Ckvcr9SZho8',
       author: 'Marlon',
-      urlImg: '',
-      course: ''
+      urlImg: 'http://uploaddeimagens.com.br/imagens/unnamed-jpg-aadea50c-06a9-415f-86e4-b7cccc807ecb',
+      course: 'Informática'
     },
     {
       id: 14,
       url: 'https://www.youtube.com/embed/ibJioLkeUSM',
       author: 'Marlon',
-      urlImg: '',
+      urlImg: 'http://uploaddeimagens.com.br/imagens/unnamed-jpg-aadea50c-06a9-415f-86e4-b7cccc807ecb',
       course: ''
     },
     {
