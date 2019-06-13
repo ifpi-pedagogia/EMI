@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   public title = 'INSTITUTO FEDERAL DO PIAUÍ';
-  public developmentTeam = 'Felipi Almeida, Joseane e Romário Coelho Oliveira';
+  public developmentTeam = 'Felipi Almeida, Joseane e Romário Coelho Oliveira, Júnior Quadros';
   public facebook = 'https://www.facebook.com/ifpiaui/';
   public instagram = 'https://www.instagram.com/ifpiaui/?hl=en';
   public twitter = 'https://twitter.com/IFPiaui';
