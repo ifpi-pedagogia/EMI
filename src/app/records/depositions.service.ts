@@ -42,14 +42,14 @@ export class DepositionsService {
       id: 5,
       url: 'https://www.youtube.com/embed/mCbY55edrnQ',
       author: 'Camila Oliveira',
-      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-03_at_14-32-07-jpeg',
+      urlImg: 'http://uploaddeimagens.com.br/images/002/140/490/full/WhatsApp_Image_2019-04-03_at_14.32.07.jpeg?1560457695',
       course: 'Meio Ambiente'
     },
     {
       id: 6,
       url: 'https://www.youtube.com/embed/1GbyUfzVBoI',
       author: 'Elias Júnior',
-      urlImg: /* 'assets/imagens/depoimento6.jpeg', */ 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-03_at_13-48-12-jpeg',
+      urlImg: /* 'assets/imagens/depoimento6.jpeg', */ 'http://uploaddeimagens.com.br/images/002/140/497/full/WhatsApp_Image_2019-04-03_at_13.48.12.jpeg?1560457839',
       course: 'Eletromecânica'
     },
     {
@@ -63,14 +63,14 @@ export class DepositionsService {
       id: 8,
       url: 'https://www.youtube.com/embed/06ne77ifibw',
       author: 'Maria Catyane',
-      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-14_at_15-16-33-jpeg', /* 'assets/imagens/depoimento8.jpeg', */
+      urlImg: 'http://uploaddeimagens.com.br/images/002/140/477/full/WhatsApp_Image_2019-04-14_at_15.16.33.jpeg?1560457418', /* 'assets/imagens/depoimento8.jpeg', */
       course: 'Meio Ambiente'
     },
     {
       id: 9,
       url: 'https://www.youtube.com/embed/Q7imw3bvImc',
       author: 'Maria Catyane',
-      urlImg: 'http://uploaddeimagens.com.br/imagens/whatsapp_image_2019-04-14_at_15-16-33-jpeg', /* 'assets/imagens/depoimento9.jpeg', */
+      urlImg: 'http://uploaddeimagens.com.br/images/002/140/477/full/WhatsApp_Image_2019-04-14_at_15.16.33.jpeg?1560457418', /* 'assets/imagens/depoimento9.jpeg', */
       course: 'Meio Ambiente'
     },
     {
@@ -100,14 +100,14 @@ export class DepositionsService {
       id: 13,
       url: 'https://www.youtube.com/embed/Ckvcr9SZho8',
       author: 'Marlon',
-      urlImg: 'http://uploaddeimagens.com.br/imagens/unnamed-jpg-aadea50c-06a9-415f-86e4-b7cccc807ecb',
+      urlImg: 'http://uploaddeimagens.com.br/images/002/140/511/full/unnamed.jpg?1560458260',
       course: 'Informática'
     },
     {
       id: 14,
       url: 'https://www.youtube.com/embed/ibJioLkeUSM',
       author: 'Marlon',
-      urlImg: 'http://uploaddeimagens.com.br/imagens/unnamed-jpg-aadea50c-06a9-415f-86e4-b7cccc807ecb',
+      urlImg: 'http://uploaddeimagens.com.br/images/002/140/511/full/unnamed.jpg?1560458260',
       course: ''
     },
     {
