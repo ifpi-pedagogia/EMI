@@ -5,8 +5,9 @@
     z-index: 1;
     position: absolute;
     clear: both;
-    height: 7.8vh;
+    height: 5rem;
     margin-bottom: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -37,10 +38,6 @@
     font-weight: bold;
     color: #FFF;
     float: left;
-}
-
-.logo-image{
-
 }
 
 .header__nav{
@@ -89,11 +86,12 @@
         box-sizing: border-box;
         clear: none;
         justify-content: space-around;
-        height: 8vh;
+        height: 5rem;
     }
 
     .logo-text{
         min-width: 100px;
+        height: 100%;
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
