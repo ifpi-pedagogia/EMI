@@ -3,16 +3,16 @@
     <section class="student-info">    
       <div>
         <div class="student-info__photo">
-          <img src="assets/imagens/4.jpeg">
+          <img [src]=deposition.urlImg>
         </div>
       
         <div>
           <h2>
-            <strong class="student-info__namem">
+            <strong class="student-info__name">
               {{deposition.author}}
             </strong>
           </h2>
-          <strong>Curso: Meio ambiente</strong>
+          <p>Curso: {{deposition.course}}</p>
         </div>
       
       </div>
