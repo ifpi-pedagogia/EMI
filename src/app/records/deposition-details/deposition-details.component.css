@@ -1,6 +1,6 @@
 .wrapper{
     display: flex;
-    height: 80vh;
+    flex-direction: column;
 }
 
 .student-info{
@@ -15,7 +15,7 @@
     margin-top: 10px;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: .2rem;
     overflow: hidden;
 }
 
