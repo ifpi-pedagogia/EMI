@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BriefHistoryComponent implements OnInit {
 
+  public imgIntro = '../../../assets/imagens/intro.png';
+  public imgAluna = '../../../assets/imagens/section2.png';
   constructor() { }
 
   ngOnInit() {

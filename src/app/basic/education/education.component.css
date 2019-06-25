@@ -2,3 +2,10 @@ h2 {
     font-size: 22px;
     color: #555555;
 }
+
+.space {
+    margin: 2px;
+    border-style: solid;
+    border-color: #63c6ae;
+    padding: 2px;
+}
