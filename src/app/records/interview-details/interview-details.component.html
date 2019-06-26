@@ -1,32 +1,31 @@
 <div class="jumbotron">
-  <div class="content">
-    <div class="user-info">
-      <img [src]="interview.urlImg" alt="Foto do aluno">
-      <h2>{{interview.studentName}}</h2>
-      <h2>Curso: {{interview.courseName}}</h2>
-    </div>
+    <div class="content">
+        <div class="user-info">
+            <img [src]="interview.urlImg" alt="Foto do aluno">
+            <h2>{{interview.studentName}}</h2>
+            <h2>Curso: {{interview.courseName}}</h2>
+        </div>
 
-    <div>
-      <div class='my-div-question'>
-        <p>01º) {{questionOne}}</p>
-      </div>
-      <p>{{interview.questions[0]}}</p>
-      <hr>
-      <div class='my-div-question'>
-        <p>02º) {{questionTwo}}</p>
-      </div>
-      <p>{{interview.questions[1]}}</p>
-      <hr>
-      <div class='my-div-question'>
-        <p>03º) {{questionTre}}</p>
-      </div>
-      <p>{{interview.questions[2]}}</p>
-      <hr>
-      <div class='my-div-question'>
-        <p>04º) {{questionFor}}</p>
-      </div>
-      <p>{{interview.questions[3]}}</p>
-      <hr>
+        <div>
+            <div class='my-div-question'>
+                <strong><p class='interview-margin'>01º) {{questionOne}}</p></strong>
+            </div>
+            <p>{{interview.questions[0]}}</p>
+
+            <div class='my-div-question'>
+                <strong><p class='interview-margin'>02º) {{questionTwo}}</p></strong>
+            </div>
+            <p>{{interview.questions[1]}}</p>
+
+            <div class='my-div-question'>
+                <strong><p class='interview-margin'>03º) {{questionTre}}</p></strong>
+            </div>
+            <p>{{interview.questions[2]}}</p>
+
+            <div class='my-div-question'>
+                <strong><p class='interview-margin'>04º) {{questionFor}}</p></strong>
+            </div>
+            <p>{{interview.questions[3]}}</p>
+        </div>
     </div>
-  </div>
 </div>

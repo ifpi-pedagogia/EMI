@@ -1,48 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
-
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 h1 {
-  font-size: 32px;
-  color: #888888;
+    font-size: 32px;
+    color: #888888;
 }
 
 h2 {
-  font-size: 22px;
-  color: #555555;
+    font-size: 22px;
+    color: #555555;
 }
 
 h3 {
-  font-size: 18px;
-  color: #555555;
+    font-size: 18px;
+    color: #555555;
 }
 
 h4 {
-  font-size: 16px;
-  color: #555555;
+    font-size: 16px;
+    color: #555555;
 }
 
 p {
-  font-size: 20px;
-  color: #555555;
+    font-size: 20px;
+    color: #555555;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.interview-margin {
+    border: solid;
+    border-color: #63c6ae;
+    padding: 10px;
 }
