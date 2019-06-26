@@ -67,31 +67,31 @@ export class MuralService {
     {
       id: 8,
       student: 'Ana Beatriz Dias Figueredo',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      iconPerfil: 'assets/imagens/Ana_Beatriz_Dias de_Figueiredo.jpg',
       deposition: 'Mantenha o foco, evite distrações, organize-se e cuide do nosso campus.',
       urlImg: '',
       courseName: 'Meio Ambiente'
     },
     {
       id: 9,
-      student: 'Fátima Milenax de S. Alves',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      student: 'Fátima Milenax de Sousa Alves',
+      iconPerfil: 'assets/imagens/Fátima_Milena_de_Sousa_Alves.jpg',
       deposition: 'Tente conciliar o tempo de estudo com diversão. Seja bem-vindo.',
-      urlImg: '',
+      urlImg: 'imagens/Fátima_Milena_de_Sousa_Alves.jpg',
       courseName: 'Meio Ambiente'
     },
     {
       id: 10,
-      student: 'Laura Negreiros',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      student: 'Laura Cristina de Negreiros',
+      iconPerfil: 'assets/imagens/LauraCristina_de_Negreiros.jpg',
       deposition: 'Sejam bem-vindos e aproveitem as oportunidades que a instituição lhes dará. Esses serão os melhores anos de aprendizado de vocês.',
       urlImg: '',
       courseName: 'Meio Ambiente'
     },
     {
       id: 11,
-      student: 'Rebeca Souza',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      student: 'Rebeca de Souza Gonzaga',
+      iconPerfil: 'assets/imagens/Rebeca_de_SouzaGonzaga.jpg',
       deposition: 'Com 02 anos de IFPI, eu já aprendi muita coisa que sei vou levar para vida. No começo não é fácil, mas ninguém disse que seria. Com muito esforço, dedicação e persistência o aluno aprende a lidar com as situações que serão vividas na instituição. Um curso integrado ao médio é diferente de tudo que já passamos e a oportunidade de tê-lo nos proporciona uma nova experiência enquanto estudantes. Para alguns pode ser que traga mais dificuldades, com mais matérias. Para outros o curso integrado pode ser a melhor experiência oferecida pelo Instituto federal, pois muitos se apaixonam pelo curso no decorrer dos 4 anos.',
       urlImg: '',
       courseName: 'Informática'
@@ -99,7 +99,7 @@ export class MuralService {
     {
       id: 12,
       student: 'Ellem Almeida',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      iconPerfil: 'assets/imagens/EllemAlmeidaAmorim.jpg',
       deposition: 'Mesmo apenas estando há dois anos no IFPI, posso enxergar todo o aprendizado que ganhei e que espero aumentar ao término do curso de ensino médio integrado. Desde a entrada no Instituto Federal percebi o quanto eu e meus colegas amadurecemos e o quanto nossa visão de mundo mudou. Mesmo enfrentando dificuldades e desavenças foi aqui que cresci, não só fisicamente, mas mentalmente e é aqui que estou dando meu primeiro passo para o que eu espero ser um grande futuro. Nem todo mundo tem oportunidade de estudar em uma escola com a estrutura e os profissionais que o Instituto oferece, por isso há um certo esforço e exigência para que possamos mostrar bons resultados, mas tudo isso compensa e nos sentimos privilegiados por estarmos em uma Instituição com um bom ensino e aprendendo muito com o curso. Além disso,  nossa vida social também mudou, pois aqui conhecemos amigos que espero que não só cursem comigo todos os 4 anos, mas que permaneçam ao término dos estudos.',
       urlImg: '',
       courseName: 'Informática'

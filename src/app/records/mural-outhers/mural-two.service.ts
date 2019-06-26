@@ -25,7 +25,7 @@ export class MuralTwoService {
       nameStudent: 'Lucas de Sousa Reis',
       responseOne: 'Aqui tive experiências que levarei para o resto da minha vida, na qual tive um incentivo da escola em todos os apectos, como: Ensino de qualidade, refeição, segurança, dentista, nutricionista, psicólogo, academia, acesso a vários esportes e outros. Não serão todos os alunos que terão oportunidade de participar dessa escola, então, você aluno(a) terá que se esforçar do começo ao fim, pois esse investimento terá um preço.',
       responseTwo: 'A conviver, diferente de outras escolas temos vários cursos para escolher, mas isso acaba resultando a pessoas de gostos diferentes. Mudamos, aprendemos ou nos acostumamos com esses gostos.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: '.assets/imagens/Lucas_de_SousaReis.jpg',
       courseName: 'Informática'
     },
     {
@@ -65,7 +65,7 @@ export class MuralTwoService {
       nameStudent: 'João Batista',
       responseOne: 'É a melhor rede de ensino médio-técnico do país. Aprendi muita coisa ao longo de minha caminhada. Cresci de maneira construtiva e positiva, desenvolvi projetos. Cresci tanto no caráter quantp em conhecimento e experiência. Não vou mentir, não é fácil, de maneira nenhuma chegar até aqui, mas nessa vida nada é fácil. Gostaria, inclusive de dedicar todos esses anos, primeiramente a DEUS e em segundo a meu pai, que faleceu na data de 07/09/2018 vítima de câncer. Ele é o meu herói.',
       responseTwo: 'A nos tornarmos o melhor de nós mesmos, a ter coragem, malícia, audácia, destreza, fé amor, compaixão, respeito, medo insegurança, confiança, força de vontade, esperança... enfim, só vivendo para se descobrir.',
-      urlImg: 'assets/imagens/pessoa2.png',
+      urlImg: 'assets/imagens/depoimento8.jpeg',
       courseName: 'Eletromecânica'
     },
     {
