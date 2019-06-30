@@ -17,7 +17,7 @@ export class MuralTwoService {
       nameStudent: 'Vanessa de Sousa Rodrigues',
       responseOne: 'Porque aqui contamos com um quadro excelente de professores, com um acervo super completo de livros didáticos e paradidáticos. O instituto campus Floriano apresenta uma das melhores estruturas de escolas públicas do Estado. A qualidade do ensino é excelente. Aqui temos ônibus grátis, refeitório. Temos variadas bolsas para ajudar, setor pedagógico, médico etc.',
       responseTwo: 'De acordo com cada curso, você aprende muitas coisas. Temos acesso a laboratórios para um melhor desenvolvimento de atividades quando relacionada a cada área. Como se não bastasse tudo isso, o IFPI nos proporciona muitas amizades, pessoas acolhedoras. Aqui aprendemos de fato a ser pessoas melhores, sem dúvidas.',
-      urlImg: 'assets/imagens/pessoa5.png',
+      urlImg: 'assets/imagens/vanessa_de_sousa.jpeg',
       courseName: 'Informática'
     },
     {
@@ -25,7 +25,7 @@ export class MuralTwoService {
       nameStudent: 'Lucas de Sousa Reis',
       responseOne: 'Aqui tive experiências que levarei para o resto da minha vida, na qual tive um incentivo da escola em todos os apectos, como: Ensino de qualidade, refeição, segurança, dentista, nutricionista, psicólogo, academia, acesso a vários esportes e outros. Não serão todos os alunos que terão oportunidade de participar dessa escola, então, você aluno(a) terá que se esforçar do começo ao fim, pois esse investimento terá um preço.',
       responseTwo: 'A conviver, diferente de outras escolas temos vários cursos para escolher, mas isso acaba resultando a pessoas de gostos diferentes. Mudamos, aprendemos ou nos acostumamos com esses gostos.',
-      urlImg: '.assets/imagens/Lucas_de_SousaReis.jpg',
+      urlImg: 'assets/imagens/lucas_de_sousa_reis.jpeg',
       courseName: 'Informática'
     },
     {
@@ -65,7 +65,7 @@ export class MuralTwoService {
       nameStudent: 'João Batista',
       responseOne: 'É a melhor rede de ensino médio-técnico do país. Aprendi muita coisa ao longo de minha caminhada. Cresci de maneira construtiva e positiva, desenvolvi projetos. Cresci tanto no caráter quantp em conhecimento e experiência. Não vou mentir, não é fácil, de maneira nenhuma chegar até aqui, mas nessa vida nada é fácil. Gostaria, inclusive de dedicar todos esses anos, primeiramente a DEUS e em segundo a meu pai, que faleceu na data de 07/09/2018 vítima de câncer. Ele é o meu herói.',
       responseTwo: 'A nos tornarmos o melhor de nós mesmos, a ter coragem, malícia, audácia, destreza, fé amor, compaixão, respeito, medo insegurança, confiança, força de vontade, esperança... enfim, só vivendo para se descobrir.',
-      urlImg: 'assets/imagens/depoimento8.jpeg',
+      urlImg: 'assets/imagens/psessoa5.png',
       courseName: 'Eletromecânica'
     },
     {
