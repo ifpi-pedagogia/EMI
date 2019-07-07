@@ -76,19 +76,19 @@ export class DepositionsService {
     {
       id: 10,
       url: 'https://www.youtube.com/embed/goVXAjykDy4',
-      author: 'Renata',
+      author: 'Renata Nayara',
       urlImg: '',
       course: ''
     },
-    /*
+    
     {
       id: 11,
-      url: '',
+      url: 'https://www.youtube.com/embed/DDv8he91GyU',
       author: 'Renata Sammer',
-      urlImg: '',
+      urlImg: 'https://uploaddeimagens.com.br/images/002/179/342/full/depoimentojpeg?1562542954',
       course: ''
     },
-    */
+    
     {
       id: 12,
       url: 'https://www.youtube.com/embed/u3bX-76FGRE',
@@ -114,7 +114,7 @@ export class DepositionsService {
       id: 15,
       url: 'https://www.youtube.com/embed/zffknHFmlec',
       author: 'Maria Regina',
-      urlImg: '',
+      urlImg: 'https://uploaddeimagens.com.br/images/002/179/342/full/depoimentojpeg?1562542954',
       course: ''
     }
     /*
