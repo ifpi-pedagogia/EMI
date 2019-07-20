@@ -10,10 +10,9 @@
           <div>
             <p>Aluno(a):</p>
             <p class='my-border-coponent-dicas'><strong>{{item.nameStudent}}</strong></p>
-            <p>Irá completar:</p>
             <div class='my-border-coponent-dicas'>
-                <p><strong>01º) {{questionOne}}</strong></p>
-                <p><strong>02º) {{questionTwo}}</strong></p>
+                <p><strong>1º) {{questionOne}}</strong></p>
+                <p><strong>2º) {{questionTwo}}</strong></p>
             </div>
             <button [routerLink]="['/records/mural-two/', item.idDeposition]" class='my-button' style='float: right;'>
               Visualizar

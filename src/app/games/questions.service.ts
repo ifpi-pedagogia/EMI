@@ -121,7 +121,7 @@ export class QuestionsService {
         ]
       },
       {
-        question: 'O ensino médio integrado, no IFPI campus Floriano possui 4 anos de duração. Mas posso cursar só até terceiro ano e receber o certificado do ensino médio.',
+        question: 'O ensino médio integrado, no IFPI campus Floriano possui 4 anos de duração.',
         rightAnswer: 'Portanto, para concluir o curso é necessário cursar os quatro anos, não sendo possível sair no terceiro ano com certificado de conclusão do ensino médio.',
         alternatives: [
           'Podendo o aluno optar por cursar o ensino médio não integrado ao técnico',
@@ -170,7 +170,7 @@ export class QuestionsService {
         rightAnswer: 'A carga horária do ensino médio integrado é maior e por isso planejada para ser desenvolvida em quatro anos',
         alternatives: [
           'A carga horária do ensino médio integrado é maior e por isso planejada para ser desenvolvida em quatro anos',
-          'Necessita de 1 (um) a mais para realização do estágio obrigatório do curso;',
+          'Necessita de 1 (um) ano a mais para realização do estágio obrigatório do curso;',
           'Porque este é o tempo mínimo exigido.'
         ]
       },

@@ -74,7 +74,7 @@ export class MuralService {
     },
     {
       id: 9,
-      student: 'Fátima Milenax de Sousa Alves',
+      student: 'Fátima Milena de Sousa Alves',
       iconPerfil: 'assets/imagens/Fátima_Milena_de_Sousa_Alves.jpg',
       deposition: 'Tente conciliar o tempo de estudo com diversão. Seja bem-vindo.',
       urlImg: 'imagens/Fátima_Milena_de_Sousa_Alves.jpg',
