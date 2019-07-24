@@ -30,7 +30,7 @@ export class TrueOrFalseService {
     },
 
     {
-      question: 'No Ensino Médio Integrado o currículo é integrado, isto é, as disciplinas são organizadas de forma que haja troca de saberes entre elas. O desenvolvimento de uma disciplina de formação geral contribui para o desenvolvimento de uma disciplina específica, assim a construção de conhecimento  torna-se mais ampla e concreta e o estudante pode vivenciar na prática   a teoria estudada em sala de aula.',
+      question: 'No Ensino Médio Integrado o currículo é integrado, isto é, as disciplinas são organizadas de forma que haja troca de saberes entre elas. O desenvolvimento de uma disciplina de formação geral contribui para o desenvolvimento de uma disciplina específica, assim a construção de conhecimento torna-se mais ampla e concreta e o estudante pode vivenciar, na prática, a teoria estudada em sala de aula.',
       rightAnswer: true,
       justification: 'O currículo integrado permite uma integração entre  ensino  e prática profissional, entre professor e aluno na busca por soluções para diferentes situações, o que implica a contribuição com a comunidade. Considera-se este currículo o mais apropriado para integrar ensino e trabalho e para formação pessoal e profissional dos estudantes.'
     }
@@ -99,7 +99,7 @@ export class TrueOrFalseService {
 
   public questionsFor: Array<QuestionTrueOrFalse> = [
     {
-      question: 'Fazer o Curso Técnico Integrado ao Ensino Médio não significa realizar dois cursos ao mesmo tempo, e sim um único curso, o técnico, articulado com o ensino médio. O desenvolvimento de uma disciplina de formação geral, por exemplo, contribui para o desenvolvimento de uma disciplina específica.',
+      question: 'Fazer o Curso Técnico Integrado ao Ensino Médio não significa realizar dois cursos ao mesmo tempo, e sim um único curso, o técnico, integrado ao ensino médio.',
       rightAnswer: true,
       justification: 'Significa realizar um único curso. De maneira integrada será trabalhado a formação para o trabalho. A troca de saberes entre as disciplinas e a união da teoria com a prática propicia um conhecimento amplo da realidade.'
     },
@@ -107,7 +107,7 @@ export class TrueOrFalseService {
     {
       question: 'Para realizar o Ensino Médio Integrado o aluno deverá passar o dia inteiro na escola.',
       rightAnswer: false,
-      justification: 'O Ensino Médio Integrado não é a mesma coisa que o ensino “integral”. O que acontece é que, como a carga horária aumenta devido à quantidade de disciplinas, algumas aulas são realizadas no contra turno,  geralmente 2 ou 3 vezes na semana.'
+      justification: 'O Ensino Médio Integrado não é a mesma coisa que o ensino “integral”. Como a carga horária aumenta devido à quantidade de disciplinas, algumas aulas são realizadas no contra turno, geralmente 2 ou 3 vezes na semana.'
     },
 
     {
@@ -118,7 +118,7 @@ export class TrueOrFalseService {
     {
       question: 'A Instituição oferece Biblioteca com acesso tanto para alunos matriculados como para estudantes de outras instituições.',
       rightAnswer: true,
-      justification: 'Todos os alunos matriculados no Instituto e de outras instituições de ensino podem utilizar os serviços da biblioteca para estudos, pesquisas etc. A biblioteca possui sala para estudo em grupo, computadores para pesquisas e acervo variado de livros.'
+      justification: 'Todos os alunos matriculados no Instituto e em outras instituições de ensino podem utilizar os serviços da biblioteca para estudos, pesquisas etc.  A biblioteca possui sala para estudo em grupo, computadores para pesquisas e acervo variado de livros.'
     },
 
     {
