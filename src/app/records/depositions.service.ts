@@ -56,7 +56,7 @@ export class DepositionsService {
       id: 7,
       url: 'https://www.youtube.com/embed/TIgtY2FGmos',
       author: 'Juliano Correia',
-      urlImg: /* 'assets/imagens/depoimento7.jpeg', */ '',
+      urlImg: /* 'assets/imagens/depoimento7.jpeg', */ 'https://i.ibb.co/X4yBR4n/940cf029-ba64-4915-98bf-afc3f3337dad.jpg',
       course: 'Meio Ambiente'
     },
     {
@@ -77,14 +77,14 @@ export class DepositionsService {
       id: 10,
       url: 'https://www.youtube.com/embed/goVXAjykDy4',
       author: 'Renata Nayara',
-      urlImg: '',
+      urlImg: 'https://i.ibb.co/Xpy7F66/0b189dfa-5a61-4879-876f-af8595aa3600.jpg',
       course: ''
     },
     
     {
       id: 11,
       url: 'https://www.youtube.com/embed/DDv8he91GyU',
-      author: 'Renata Sammer',
+      author: 'Renata Sammya',
       urlImg: 'https://uploaddeimagens.com.br/images/002/179/342/full/depoimentojpeg?1562542954',
       course: ''
     },

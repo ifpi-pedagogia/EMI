@@ -19,7 +19,7 @@ export class MuralService {
     {
       id: 2,
       student: 'Ildenice Azevedo',
-      iconPerfil: 'assets/imagens/3.png',
+      iconPerfil: 'assets/imagens/pessoa3.png',
       deposition: 'Espero que vocês obtenham um bom desempenho e conhecimento no decorrer do tempo que vocês passarem aqui. Desejo sorte, sucesso e prosperidade e espera também que gostem muito dos cursos disponíveis e da estrutura e de tudo que a escola tem a oferecer.',
       urlImg: '',
       courseName: 'Meio Ambiente'
