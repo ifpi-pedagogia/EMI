@@ -1,36 +1,31 @@
-<main>
-  <div class="wrapper">
-    <section class="student-info">    
-      <div>
-        <div class="student-info__photo">
-          <img [src]=deposition.urlImg>
-        </div>
-      
-        <div>
-          <h2>
-            <strong class="student-info__name">
+<main class="mt-5">
+    <div class="wrapper">
+        <section class="student-info">
+            <div>
+                <div class="student-info__photo">
+                    <img [src]=deposition.urlImg>
+                </div>
+
+                <div>
+                    <h2>
+                        <strong class="student-info__name">
               {{deposition.author}}
             </strong>
-          </h2>
-          <p>Curso: {{deposition.course}}</p>
-        </div>
-      
-      </div>
-    </section>
-        
-    <section class="student-deposition">
-      <div>
-         <!-- Adicionar src dinamicamente--> 
-        <iframe 
-          class="student-deposition__video"
-          [src]='transform(deposition.url)'
-          frameborder="0"
-          allow="accelerometer;
+                    </h2>
+                    <p>Curso: {{deposition.course}}</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="student-deposition">
+            <div>
+                <!-- Adicionar src dinamicamente-->
+                <iframe class="student-deposition__video" [src]='transform(deposition.url)' frameborder="0" allow="accelerometer;
           encrypted-media;
-          gyroscope;"
-          allowfullscreen>
+          gyroscope;" allowfullscreen>
         </iframe>
-      </div>
-    </section>
-  </div>
+            </div>
+        </section>
+    </div>
 </main>
