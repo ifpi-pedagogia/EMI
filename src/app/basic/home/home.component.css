@@ -195,7 +195,7 @@ article {
     align-items: center;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     .article-intro {
         margin-top: 4em;
     }

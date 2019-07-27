@@ -30,17 +30,21 @@
         </div>
         <!-- Fim de jogo e resultados gerais (aproveitamento) etc -->
         <div *ngIf='finishGame'>
-            <h1>Fim de jogo!</h1>
+            <h1>Fim da rodada!</h1>
             <div class="next-button">
                 <h1 class="text-center">Número de acertos: {{ score }}</h1>
                 <h1 class="text-center">Desempenho: {{ perfomance | number: '2.1-1' }}%</h1>
             </div>
-            <div *ngIf="endGame" class='next-button bg-white'>
-                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do game. A próxima rodada significa retornar para a 01º rodada.</h2>
-            </div>
-            <div class="next-button">
-                <button [routerLink]="['/games/quiz']">Cancelar</button>
+            <div *ngIf="!endGame" class="next-button">
                 <button (click)='auxInitOrStart()'>Próxima rodada</button>
+            </div>
+            <div *ngIf="endGame" class='next-button bg-white'>
+                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do game. Deseja reiniciar?</h2>
+                <h3>Numero total de acertos: {{scoreFinal}}</h3>
+                <h3>Aprovetamento final: <span>{{ setPermanceFinal() | number: '2.1-1' }}%</span></h3>
+                <div class="next-button">
+                    <button (click)='auxInitOrStart()'>Reiniciar</button>
+                </div>
             </div>
         </div>
     </div>
