@@ -26,6 +26,7 @@ export class TrueOrFalseComponent implements OnInit {
   public displayResult: boolean; // exibir ou não div com 'as respostas'?
   public displayQuestion: boolean; // exibir ou não as perguntas?
   public image = {imgTrue: 'assets/imagens/true.png', imgFalse: 'assets/imagens/remove-icon.png'};
+  public endGame = false;
 
   constructor(private service: TrueOrFalseService) { }
 
@@ -42,9 +43,11 @@ export class TrueOrFalseComponent implements OnInit {
     // debug: console.log('Sorteio acionado');
     const num = this.arraySorteado;
     if (num === 7) {
+      this.endGame = true;
       this.arraySorteado = 1;
     } else {
       this.arraySorteado++;
+      this.endGame = false;
     }
     // lógica sorteio
     this.service.setQuestions(this.arraySorteado);
