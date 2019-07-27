@@ -39,9 +39,9 @@
                 <button (click)='auxInitOrStart()'>Próxima rodada</button>
             </div>
             <div *ngIf="endGame" class='next-button bg-white'>
-                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do game. Deseja reiniciar?</h2>
+                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do jogo. Deseja reiniciar?</h2>
                 <p>Numero total de acertos: {{scoreFinal}}</p>
-                <p>Aprovetamento final: <span>{{ setPermanceFinal() | number: '2.1-1' }}%</span></p>
+                <p>Aproveitamento final: <span>{{ setPermanceFinal() | number: '2.1-1' }}%</span></p>
                 <div class="next-button">
                     <button (click)='auxInitOrStart()'>Reiniciar</button>
                 </div>
