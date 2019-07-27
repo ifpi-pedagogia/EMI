@@ -35,8 +35,8 @@
                 <h1 class="text-center">Número de acertos: {{ score }}</h1>
                 <h1 class="text-center">Desempenho: {{ perfomance | number: '2.1-1' }}%</h1>
             </div>
-            <div *ngIf="endGame" class='next-button'>
-                <h2 class='text-center'>Você já jogou todas as rodadas do game. A próxima rodada siguinifica retornar para a 01º rodada.</h2>
+            <div *ngIf="endGame" class='next-button bg-white'>
+                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do game. A próxima rodada significa retornar para a 01º rodada.</h2>
             </div>
             <div class="next-button">
                 <button [routerLink]="['/games/quiz']">Cancelar</button>
