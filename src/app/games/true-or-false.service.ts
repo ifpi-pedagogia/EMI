@@ -96,7 +96,6 @@ export class TrueOrFalseService {
       justification: 'Além de estar preparado para exercer uma profissão o aluno poderá, se for do seu interesse, realizar o ENEM  e ingressar no Ensino Superior.'
     }
   ];
-
   public questionsFor: Array<QuestionTrueOrFalse> = [
     {
       question: 'Fazer o Curso Técnico Integrado ao Ensino Médio não significa realizar dois cursos ao mesmo tempo, e sim um único curso, o técnico, integrado ao ensino médio.',
@@ -127,7 +126,87 @@ export class TrueOrFalseService {
       justification: 'Ao concluir o Ensino Médio Integrado o aluno recebe um certificado de conclusão do ensino médio com habilitação técnica na área do curso escolhido.'
     }
   ];
-
+  public questionsFive: Array<QuestionTrueOrFalse> = [
+    {
+      question: 'Apenas alunos que cursaram o Ensino Fundamental em escolas públicas podem fazer inscrição no teste classificatório para ingresso no Instituto Federal.',
+      rightAnswer: false,
+      justification: 'Alunos que realizaram o ensino fundamental em escolas particulares também podem realizar o teste classificatório, inscrevendo-se na modalidade “ampla concorrência”. Já os alunos provenientes de escolas públicas devem realizar a inscrição na modalidade de “cotas”.'
+    },
+    {
+      question: 'No Instituto Federal temos duas opções para realizar o Ensino Médio, o curso técnico integrado ao médio e o curso de Ensino Médio não integrado.',
+      rightAnswer: false,
+      justification: 'Os Institutos Federais oferecem o ensino médio integrado à Educação Profissional através do curso Técnico Integrado ao Ensino Médio.'
+    },
+    {
+      question: 'Organização do tempo, prioridade aos estudos e determinação são fatores essenciais para que o aluno tenha êxito no Ensino Médio Integrado.	',
+      rightAnswer: true,
+      justification: 'O curso técnico possui carga horária maior e mais disciplinas, por isso exige do aluno esforço, determinação e planejamento do tempo. Uma boa opção é criar uma rotina de estudos. A prioridade é estudar, outras atividades não devem atrapalhar o desempenho acadêmico. Dificuldades aparecerão, no entanto, é necessário manter o foco no seu objetivo e ser persistente.'
+    },
+    {
+      question: 'Os serviços médicos, odontológicos e psicológicos oferecidos nos Institutos são gratuitos para o estudante.',
+      rightAnswer: true,
+      justification: 'Estes serviços fazem parte da política de assistência estudantil e todos os alunos regularmente matriculados tem direito aos atendimentos.'
+    },
+    {
+      question: 'O desenvolvimento de projetos de pesquisa e extensão proporciona ao aluno do EMI a realização de descobertas, maior conhecimento da realidade, o envolvimento com a resolução de problemas sociais e incentiva a criação de soluções tecnológicas.',
+      rightAnswer: true,
+      justification: 'A realização de projetos de pesquisa e extensão proporciona uma formação ampla para o estudante, desenvolvendo, inclusive seu espírito empreendedor. Além disto, os Institutos Federais exercem sua função social através das contribuições que os resultados das pesquisas geram à população local ou regional.'
+    }
+  ];
+  public questionsSix: Array<QuestionTrueOrFalse> = [
+    {
+      question: 'O Ensino Médio Integrado prioriza pela educação profissional humanizadora, que significa além da formação técnica, uma formação política, científica e cultural visando o desenvolvimento humano integral do estudante. ',
+      rightAnswer: true,
+      justification: 'É uma formação que prioriza a integração das várias áreas do conhecimento estabelecendo uma conexão entre elas. Não significa apenas a aprendizagem de técnicas específicas para exercer uma profissão, e sim uma educação para a vida, o que inclui o trabalho, o desenvolvimento intelectual, cultural e científico.'
+    },
+    {
+      question: 'Os Institutos Federais possuem refeitório institucional para alimentação (almoço e jantar), dos estudantes, no entanto para ter acesso é necessário o pagamento de uma taxa.',
+      rightAnswer: false,
+      justification: 'A oferta de alimentação no refeitório institucional é uma ação prevista na política de assistência estudantil, o acesso é gratuito. No campus Floriano-PI basta realizar, com antecedência a reserva no sistema SARI (Serviço de Atendimento ao Restaurante Institucional)'
+    },
+    {
+      question: 'Caso eu tenha interesse, posso mudar de curso. Por exemplo, eu faço o primeiro ano do curso técnico de eletromecânica integrado ao Ensino Médio, mas no segundo ano quero continuar no curso de informática.',
+      rightAnswer: false,
+      justification: 'Após a matrícula não é possível mudar de curso. O aluno deve permanecer no curso para o qual foi aprovado no exame classificatório até sua conclusão.'
+    },
+    {
+      question: 'No Ensino Médio Integrado o estágio é obrigatório e o aluno deve realizá-lo no próprio campus.',
+      rightAnswer: false,
+      justification: 'O estágio não é obrigatório, mas havendo oportunidade, o estudante poderá realizá-lo dentro ou fora da instituição.'
+    },
+    {
+      question: 'No curso técnico integrado é essencial a associação da teoria com a prática e isto pode ser feito nas aulas nos laboratórios e em visitas técnica e na realização de atividades de pesquisa e extensão.',
+      rightAnswer: true,
+      justification: 'Teoria e prática se complementam possibilitando uma aprendizagem significativa e contextualizada com a realidade.'
+    }
+  ];
+  public questionSeven: Array<QuestionTrueOrFalse> = [
+    {
+      question: 'Ao concluir o curso técnico em eletromecânica o aluno deverá, obrigatoriamente, trabalhar como técnico, não sendo possível prosseguir os estudos em curso superior de sua escolha.',
+      rightAnswer: false,
+      justification: 'O curso técnico integrado não limita e sim abre possibilidades. Ao concluí-lo, o jovem pode fazer um curso superior, trabalhar como técnico ou fazer as duas coisas.'
+    },
+    {
+      question: 'No IFPI campus Floriano, cada curso técnico tem um período de duração diferente, por exemplo, o curso Técnico Integrado em Edificações  tem duração de 3 anos , já o curso de Meio Ambiente tem duração de 4 anos.',
+      rightAnswer: false,
+      justification: 'Todos os cursos têm o mesmo tempo de duração.'
+    },
+    {
+      question: 'Após ser aprovado no exame classificatório o estudante deve aguardar em casa o início das aulas.',
+      rightAnswer: false,
+      justification: 'A vaga só estará garantida após a realização da matrícula que ocorre mediante apresentação de toda a documentação exigida no edital de seleção.'
+    },
+    {
+      question: 'Posso encontrar informações sobre os cursos técnicos de nível médio ofertados nos Institutos Federais no Catálogo Nacional de Cursos Técnicos - CNCT',
+      rightAnswer: true,
+      justification: 'Este catálogo serve para orientar as Instituições, estudantes e a sociedade em geral. Nele encontram-se uma variedade de cursos técnicos e suas caracterizações.'
+    },
+    {
+      question: 'No Ensino Médio Integrado as disciplinas técnicas são cursadas a partir do segundo ano.',
+      rightAnswer: false,
+      justification: 'Na matriz curricular do curso as disciplinas, tanto técnicas como de formação geral, são distribuídas em todos os anos.'
+    }
+  ];
   public bdQuestions: Array<QuestionTrueOrFalse> = [];
 
   constructor() { }
@@ -142,8 +221,14 @@ export class TrueOrFalseService {
       this.bdQuestions = this.questionsTwo;
     } else if (idArray === 3) {
       this.bdQuestions = this.questionsTre;
-    } else {
+    } else if (idArray === 4) {
       this.bdQuestions = this.questionsFor;
+    } else if(idArray === 5) {
+      this.bdQuestions = this.questionsFive;
+    } else if (idArray === 6) {
+      this.bdQuestions = this.questionsSix;
+    } else {
+      this.bdQuestions = this.questionSeven;
     }
   }
   /* english: returns an object with the questions and answers of the current round

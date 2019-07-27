@@ -41,7 +41,7 @@ export class TrueOrFalseComponent implements OnInit {
   private sorteio(): void {
     // debug: console.log('Sorteio acionado');
     const num = this.arraySorteado;
-    if (num === 4) {
+    if (num === 7) {
       this.arraySorteado = 1;
     } else {
       this.arraySorteado++;
