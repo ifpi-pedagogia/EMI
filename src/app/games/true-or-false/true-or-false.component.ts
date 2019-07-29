@@ -17,6 +17,7 @@ export class TrueOrFalseComponent implements OnInit {
   public questionsErrors: Array<QuestionTrueOrFalse> = [];
   public round: number; // rodada atual
   public score: number; // pontuação atual
+  public scoreFinal: number;
   public finishGame: boolean; // controle do jogo
   public perfomance: number; // % de acertos
   public resultMensseger: string; // acertou ou errou?
@@ -26,6 +27,7 @@ export class TrueOrFalseComponent implements OnInit {
   public displayResult: boolean; // exibir ou não div com 'as respostas'?
   public displayQuestion: boolean; // exibir ou não as perguntas?
   public image = {imgTrue: 'assets/imagens/true.png', imgFalse: 'assets/imagens/remove-icon.png'};
+  public endGame = false;
 
   constructor(private service: TrueOrFalseService) { }
 
@@ -36,15 +38,19 @@ export class TrueOrFalseComponent implements OnInit {
   public init(): void {
     this.auxInitOrStart();
     this.auxQuestions = this.service.getQuestions();
+    this.endGame = false;
+    this.scoreFinal = 0;
   }
 
   private sorteio(): void {
     // debug: console.log('Sorteio acionado');
     const num = this.arraySorteado;
-    if (num === 4) {
+    if (num === 7) {
+      this.endGame = true;
       this.arraySorteado = 1;
     } else {
       this.arraySorteado++;
+      this.endGame = false;
     }
     // lógica sorteio
     this.service.setQuestions(this.arraySorteado);
@@ -82,6 +88,7 @@ export class TrueOrFalseComponent implements OnInit {
     // debug: console.log('round: ' + this.round + 'max: ' + this.numMaxQuestion);
     if (this.round === this.numMaxQuestion) {
       this.finishGame = true;
+      this.scoreFinal += this.score;
       this.setPerfomance();
       this.setClassification();
       this.notDisplays();
@@ -114,6 +121,10 @@ export class TrueOrFalseComponent implements OnInit {
 
   public setPerfomance(): void {
     this.perfomance = this.score / this.numMaxQuestion * 100;
+  }
+
+  public setPermanceFinal(): number {
+    return this.scoreFinal / 35 * 100;
   }
 
   public setClassification(): void {

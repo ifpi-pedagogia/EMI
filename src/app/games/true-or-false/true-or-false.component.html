@@ -1,44 +1,51 @@
 <div>
-  <h1>Mito ou verdade? Responda</h1>
+    <h1>Mito ou verdade? Responda</h1>
 </div>
 <div>
-  <div>
-    <!-- Caixa com a pergunta da rodada-->
-    <div *ngIf='displayQuestion'>
-      <p>{{questions[round].question}}</p>
-      <div class="button-container">
-        <div class="true-button" (click)='verifyResponse(true)'>
-          <div class="row">
-            <h1>
-              Verdade
-            </h1>
-          </div>
+    <div>
+        <!-- Caixa com a pergunta da rodada-->
+        <div *ngIf='displayQuestion'>
+            <p>{{questions[round].question}}</p>
+            <div class="button-container">
+                <div class="true-button" (click)='verifyResponse(true)'>
+                    <div class="row">
+                        <h1>
+                            Verdade
+                        </h1>
+                    </div>
+                </div>
+                <div class="false-button" (click)='verifyResponse(false)'>
+                    <div class="row">
+                        <h1>
+                            Mito
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="false-button" (click)='verifyResponse(false)'>
-          <div class="row">
-            <h1>
-              Mito
-            </h1>
-          </div>
+        <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
+        <div *ngIf="displayResult">
+            <p>{{showMensseger()}}</p>
+            <div (click)="incrementRound()" class="next-button">Próximo</div>
         </div>
-      </div>
+        <!-- Fim de jogo e resultados gerais (aproveitamento) etc -->
+        <div *ngIf='finishGame'>
+            <h1>Fim da rodada!</h1>
+            <div class="next-button">
+                <h1 class="text-center">Número de acertos: {{ score }}</h1>
+                <h1 class="text-center">Desempenho: {{ perfomance | number: '2.1-1' }}%</h1>
+            </div>
+            <div *ngIf="!endGame" class="next-button">
+                <button (click)='auxInitOrStart()'>Próxima rodada</button>
+            </div>
+            <div *ngIf="endGame" class='next-button bg-white'>
+                <h2 class='text-center text-danger'>Você já jogou todas as rodadas do jogo. Deseja reiniciar?</h2>
+                <p>Numero total de acertos: {{scoreFinal}}</p>
+                <p>Aproveitamento final: <span>{{ setPermanceFinal() | number: '2.1-1' }}%</span></p>
+                <div class="next-button">
+                    <button (click)='auxInitOrStart()'>Reiniciar</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Caixa com o resultado (acertou ou erro) + Justificativa -->
-    <div *ngIf="displayResult">
-      <p>{{showMensseger()}}</p>
-      <div (click)="incrementRound()" class="next-button">Próximo</div>
-    </div>
-    <!-- Fim de jogo e resultados gerais (aproveitamento) etc -->
-    <div *ngIf='finishGame'>
-      <h1>Fim de jogo!</h1>
-      <div class="next-button">
-        <h1 class="text-center">Número de acertos: {{ score }}</h1>
-        <h1 class="text-center">Desempenho: {{ perfomance | number: '2.1-1' }}%</h1>
-      </div>
-      <div class="next-button">
-        <button [routerLink]="['/games/quiz']">Cancelar</button>
-        <button (click)='auxInitOrStart()'>Próxima rodada</button>
-      </div>
-    </div>
-  </div>
 </div>

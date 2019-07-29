@@ -1,20 +1,20 @@
-<div class='card-container'>
-  <ul>
-    <li class="my-grid-container my-border" style='margin-bottom: 4px;' *ngFor="let item of interviews">
-      <div>
-        <img [src]="item.urlImg" alt="Avatar">
-      </div>
-      <div>
-        <p>Aluno(a):</p>
-        <p class='my-border-card'>{{item.studentName}}</p>
-        <p>Outros dados:</p>
-        <div class='my-border-card'>
-          <p>Curso: {{item.courseName}}</p>
-          <p>Sala: {{item.sala}}</p>
-        </div>
-        <button class='my-button' [routerLink]="['/records/interviews', item.id]">Visualizar</button>
-      </div>
+<div class='card-container mt-5'>
+    <ul>
+        <li class="my-grid-container my-border" style='margin-bottom: 4px;' *ngFor="let item of interviews">
+            <div>
+                <img [src]="item.urlImg" alt="Avatar">
+            </div>
+            <div>
+                <p>Aluno(a):</p>
+                <p class='my-border-card'>{{item.studentName}}</p>
+                <p>Outros dados:</p>
+                <div class='my-border-card'>
+                    <p>Curso: {{item.courseName}}</p>
+                    <p>Sala: {{item.sala}}</p>
+                </div>
+                <button class='my-button btn btn-primary' [routerLink]="['/records/interviews', item.id]">Visualizar</button>
+            </div>
 
-    </li>
-  </ul>
+        </li>
+    </ul>
 </div>
