@@ -11,7 +11,7 @@ export class MuralService {
     {
       id: 1,
       student: 'Ana Clara de Sousa Marques',
-      iconPerfil: 'assets/imagens/1.png',
+      iconPerfil: 'assets/imagens/pessoa3.png',
       deposition: 'Calouro, a jornada no instituto vai ser árdua e cansativa, mas acredite, todos esses contraturnos vão valer a pena no final. É um aprendizado para a vida acadêmica e social também. Coragem e boa sorte.',
       urlImg: '',
       courseName: 'Meio Ambiente'
@@ -27,7 +27,7 @@ export class MuralService {
     {
       id: 3,
       student: 'Laís',
-      iconPerfil: 'assets/imagens/4.jpeg',
+      iconPerfil: 'assets/imagens/pessoa5.png',
       deposition: 'Acredite em si mesmo, você é incrível. E aproveite ao máximo essa instituição maravilhosa',
       urlImg: '',
       courseName: 'Meio Ambiente'
@@ -35,7 +35,7 @@ export class MuralService {
     {
       id: 4,
       student: 'Géssica Kauane',
-      iconPerfil: 'assets/imagens/2.jpeg',
+      iconPerfil: 'assets/imagens/pessoa5.png',
       deposition: 'Se você conseguio entrar e chegar até aqui você irá conseguir concluir, conseguirá ir muito mais além, e será uma pessoa bem sucedida e um excelente profissional. Se precisarem de ajuda me procurem nas redes sociais, estarei a disposição. Parabéns e boa sorte. Até breve, beijos.',
       urlImg: '',
       courseName: 'Meio Ambiente'
@@ -43,7 +43,7 @@ export class MuralService {
     {
       id: 5,
       student: 'Samuel Henrique de Oliveira Silva',
-      iconPerfil: 'assets/imagens/1.png',
+      iconPerfil: 'assets/imagens/pessoa1.png',
       deposition: 'Leiam bastantes livros na casa da leitura, pois, isso ajuda muito em seu conhecimento e vocabulário. Curtam a escola, porém, nunca coloquem os estudos em 2º lugar. Procure deixar as matérias sempre em dias, isso ajuda muito.',
       urlImg: '',
       courseName: 'Meio Ambiente'
@@ -51,7 +51,7 @@ export class MuralService {
     {
       id: 6,
       student: 'Natanmáx Nicolas da Silva Oliveira',
-      iconPerfil: 'assets/imagens/1.png',
+      iconPerfil: 'assets/imagens/pessoa2.png',
       deposition: 'Preparem-se, vai ser tudo diferente, vai ter muita mudança na vida de vocês. Quando saírem daqui, serão pessoas completamente e até mesmo extremamente diferentes de quando entraram. Aproveitem todas as oportunidades.',
       urlImg: '',
       courseName: 'Meio Ambiente'
@@ -59,7 +59,7 @@ export class MuralService {
     {
       id: 7,
       student: 'Maria Catiany',
-      iconPerfil: 'assets/imagens/3.png',
+      iconPerfil: 'assets/imagens/pessoa5.png',
       deposition: '"Quando você pensar em desistir lembre-se pelo que você esta lutando." Ah! Resolva as listas.',
       urlImg: '',
       courseName: 'Meio Ambiente'
