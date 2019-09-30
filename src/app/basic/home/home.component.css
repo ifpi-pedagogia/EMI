@@ -219,6 +219,49 @@ article {
     flex: 0;
   }
 
+  .hero,
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6,
+  .section-7 {
+    padding: 100px auto 100px;
+    overflow: visible;
+  }
+
+  .hero{
+    margin-bottom: 40px;
+  }
+
+  .section-2{
+    margin-top: 200px;
+  }
+
+  .section-3{
+    margin-top: 100px;
+  }
+
+  .section-4 h1 {
+    font-size: 20px;
+  }
+
+  .section-4 {
+    margin-top: 10px;
+  }
+
+  .section-5 {
+    margin-top: 10px;
+  }
+
+  .section-5 p {
+    font-size: 16px;
+  }
+
+  .section-6 h1 {
+    font-size: 16px;
+  }
+
   .section-2__img {
     flex: 0;
     width: 0;
