@@ -16,22 +16,22 @@ export class MuralTwoService {
       idDeposition: 1,
       nameStudent: 'Vanessa de Sousa Rodrigues',
       responseOne: 'Porque aqui contamos com um quadro excelente de professores, com um acervo super completo de livros didáticos e paradidáticos. O instituto campus Floriano apresenta uma das melhores estruturas de escolas públicas do Estado. A qualidade do ensino é excelente. Aqui temos ônibus grátis, refeitório. Temos variadas bolsas para ajudar, setor pedagógico, médico etc.',
-      responseTwo: 'De acordo com cada curso, você aprende muitas coisas. Temos acesso a laboratórios para um melhor desenvolvimento de atividades quando relacionada a cada área. Como se não bastasse tudo isso, o IFPI nos proporciona muitas amizades, pessoas acolhedoras. Aqui aprendemos de fato a ser pessoas melhores, sem dúvidas.',
+      responseTwo: 'De acordo com cada curso, você aprende muitas coisas. Temos acesso a laboratórios para um melhor desenvolvimento de atividades relacionadas a cada área. Como se não bastasse tudo isso, o IFPI nos proporciona muitas amizades, pessoas acolhedoras. Aqui aprendemos de fato a ser pessoas melhores, sem dúvidas.',
       urlImg: 'assets/imagens/vanessa_de_sousa.jpeg',
       courseName: 'Informática'
     },
     {
       idDeposition: 2,
       nameStudent: 'Lucas de Sousa Reis',
-      responseOne: 'Aqui tive experiências que levarei para o resto da minha vida, na qual tive um incentivo da escola em todos os apectos, como: Ensino de qualidade, refeição, segurança, dentista, nutricionista, psicólogo, academia, acesso a vários esportes e outros. Não serão todos os alunos que terão oportunidade de participar dessa escola, então, você aluno(a) terá que se esforçar do começo ao fim, pois esse investimento terá um preço.',
-      responseTwo: 'A conviver, diferente de outras escolas temos vários cursos para escolher, mas isso acaba resultando a pessoas de gostos diferentes. Mudamos, aprendemos ou nos acostumamos com esses gostos.',
+      responseOne: 'Aqui tive experiências que levarei para o resto da minha vida, na qual tive um incentivo da escola em todos os apectos, como: ensino de qualidade, refeição, segurança, dentista, nutricionista, psicólogo, academia, acesso a vários esportes e outros. Não serão todos os alunos que terão oportunidade de participar dessa escola, então, você aluno(a) terá que se esforçar do começo ao fim, pois esse investimento terá um preço.',
+      responseTwo: 'A conviver, diferente de outras escolas, temos vários cursos para escolher, mas isso acaba resultando a pessoas de gostos diferentes. Mudamos, aprendemos ou nos acostumamos com esses gostos.',
       urlImg: 'assets/imagens/lucas_de_sousa_reis.jpeg',
       courseName: 'Informática'
     },
     {
       idDeposition: 3,
       nameStudent: 'Kassia Cristina',
-      responseOne: 'Ele nos oferece uma ótima estrutura que nos acolhe, tornando-se nossa segunda casa. O instituto proporciona nos desenvolvermos como pessoa e nos oferece várias oportunidades.',
+      responseOne: 'Ele nos oferece uma ótima estrutura que nos acolhe, tornando-se nossa segunda casa. O Instituto proporciona nosso desenvolvimento como pessoa e nos oferece várias oportunidades.',
       responseTwo: 'A ser bons profissionais, a ser pessoas melhores. Os professores nos passam experiências e ensinamentos que vão além do conteúdo da matéria.',
       urlImg: 'assets/imagens/pessoa5.png',
       courseName: 'Informática'
@@ -63,7 +63,7 @@ export class MuralTwoService {
     {
       idDeposition: 7,
       nameStudent: 'João Batista',
-      responseOne: 'É a melhor rede de ensino médio-técnico do país. Aprendi muita coisa ao longo de minha caminhada. Cresci de maneira construtiva e positiva, desenvolvi projetos. Cresci tanto no caráter quantp em conhecimento e experiência. Não vou mentir, não é fácil, de maneira nenhuma chegar até aqui, mas nessa vida nada é fácil. Gostaria, inclusive de dedicar todos esses anos, primeiramente a DEUS e em segundo a meu pai, que faleceu na data de 07/09/2018 vítima de câncer. Ele é o meu herói.',
+      responseOne: 'É a melhor rede de ensino médio-técnico do país. Aprendi muita coisa ao longo de minha caminhada. Cresci de maneira construtiva e positiva, desenvolvi projetos. Cresci tanto no caráter quanto em conhecimento e experiência. Não vou mentir, não é fácil, de maneira nenhuma chegar até aqui, mas nessa vida nada é fácil. Gostaria, inclusive de dedicar todos esses anos, primeiramente a DEUS e em segundo a meu pai, que faleceu na data de 07/09/2018 vítima de câncer. Ele é o meu herói.',
       responseTwo: 'A nos tornarmos o melhor de nós mesmos, a ter coragem, malícia, audácia, destreza, fé amor, compaixão, respeito, medo insegurança, confiança, força de vontade, esperança... enfim, só vivendo para se descobrir.',
       urlImg: 'assets/imagens/psessoa5.png',
       courseName: 'Eletromecânica'
@@ -72,7 +72,7 @@ export class MuralTwoService {
       idDeposition: 8,
       nameStudent: 'Essondro Juniel Veloso do Nascimento',
       responseOne: 'Possui um grande número de professores qualificados e empenhados a ensinar. Possui estrutura e oferece apoio aos alunos.',
-      responseTwo: 'A se relacionar melhor com os colegas de classe e de outros cursos. Motivação por meio de atividades físicas. Aprendemos o quanto o incwntivo é importante na vida dos estudantes. Apoio e parceria são essenciais para aguentar os 04 anos. Aprendemos a fazer amigos, que muitas vezes são os que garantem o citado anterior, amigos esses que vamos querer levar para o resto da vida.',
+      responseTwo: 'A nos relacionarmos melhor com os colegas de classe e de outros cursos. Motivação por meio de atividades físicas. Aprendemos o quanto o incentivo é importante na vida dos estudantes. Apoio e parceria são essenciais para aguentar os 4 anos. Aprendemos a fazer amigos, que muitas vezes são os que garantem o que acima citei, amigos esses que vamos querer levar para o resto da vida.',
       urlImg: 'assets/imagens/pessoa2.png',
       courseName: 'Eletromecânica'
     }

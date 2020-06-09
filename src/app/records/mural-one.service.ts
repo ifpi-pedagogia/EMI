@@ -20,7 +20,7 @@ export class MuralService {
       id: 2,
       student: 'Ildenice Azevedo',
       iconPerfil: 'assets/imagens/pessoa3.png',
-      deposition: 'Espero que vocês obtenham um bom desempenho e conhecimento no decorrer do tempo que vocês passarem aqui. Desejo sorte, sucesso e prosperidade e espera também que gostem muito dos cursos disponíveis e da estrutura e de tudo que a escola tem a oferecer.',
+      deposition: 'Espero que vocês obtenham um bom desempenho e conhecimento no decorrer do tempo que passarem aqui. Desejo sorte, sucesso e prosperidade e espero também que gostem muito dos cursos disponíveis, da estrutura e de tudo que a escola tem a oferecer.',
       urlImg: '',
       courseName: 'Meio Ambiente'
     },
@@ -36,7 +36,7 @@ export class MuralService {
       id: 4,
       student: 'Géssica Kauane',
       iconPerfil: 'assets/imagens/pessoa5.png',
-      deposition: 'Se você conseguio entrar e chegar até aqui você irá conseguir concluir, conseguirá ir muito mais além, e será uma pessoa bem sucedida e um excelente profissional. Se precisarem de ajuda me procurem nas redes sociais, estarei a disposição. Parabéns e boa sorte. Até breve, beijos.',
+      deposition: 'Se você conseguiu entrar e chegar até aqui você irá conseguir concluir, conseguirá ir muito mais além, será uma pessoa bem sucedida e um excelente profissional. Se precisarem de ajuda me procurem nas redes sociais, estarei à disposição. Parabéns e boa sorte. Até breve, beijos.',
       urlImg: '',
       courseName: 'Meio Ambiente'
     },
@@ -92,7 +92,7 @@ export class MuralService {
       id: 11,
       student: 'Rebeca de Souza Gonzaga',
       iconPerfil: 'assets/imagens/Rebeca_de_SouzaGonzaga.jpg',
-      deposition: 'Com 02 anos de IFPI, eu já aprendi muita coisa que sei vou levar para vida. No começo não é fácil, mas ninguém disse que seria. Com muito esforço, dedicação e persistência o aluno aprende a lidar com as situações que serão vividas na instituição. Um curso integrado ao médio é diferente de tudo que já passamos e a oportunidade de tê-lo nos proporciona uma nova experiência enquanto estudantes. Para alguns pode ser que traga mais dificuldades, com mais matérias. Para outros o curso integrado pode ser a melhor experiência oferecida pelo Instituto federal, pois muitos se apaixonam pelo curso no decorrer dos 4 anos.',
+      deposition: 'Com 02 anos de IFPI, eu já aprendi muita coisa que sei vou levar para vida. No começo não é fácil, mas ninguém disse que seria. Com muito esforço, dedicação e persistência o aluno aprende a lidar com as situações que serão vividas na instituição. Um curso integrado ao médio é diferente de tudo que já passamos e a oportunidade de tê-lo nos proporciona uma nova experiência enquanto estudantes. Para alguns pode ser que traga mais dificuldades, com mais matérias. Para outros o curso integrado pode ser a melhor experiência oferecida pelo Instituto Federal, pois muitos se apaixonam pelo curso no decorrer dos 4 anos.',
       urlImg: '',
       courseName: 'Informática'
     },
