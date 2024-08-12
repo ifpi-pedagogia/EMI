@@ -26,7 +26,7 @@ export class TrueOrFalseComponent implements OnInit {
   public arraySorteado = 0;
   public displayResult: boolean; // exibir ou não div com 'as respostas'?
   public displayQuestion: boolean; // exibir ou não as perguntas?
-  public image = {imgTrue: 'assets/imagens/true.png', imgFalse: 'assets/imagens/remove-icon.png'};
+  public image = {imgTrue: 'https://ifpi-pedagogia.github.io/EMI/assets/imagens/true.png', imgFalse: 'https://ifpi-pedagogia.github.io/EMI/assets/imagens/remove-icon.png'};
   public endGame = false;
 
   constructor(private service: TrueOrFalseService) { }
